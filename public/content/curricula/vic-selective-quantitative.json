@@ -1,0 +1,26 @@
+{
+  "id": "vic-selective-quantitative",
+  "version": "2025",
+  "region": "AU-VIC",
+  "subject": "numerical",
+  "displayName": "VIC Selective — Quantitative Reasoning",
+  "exam": "VCAA-Selective",
+  "locale": "en-AU",
+  "description": "Victorian Selective Entry Examination — Quantitative Reasoning",
+  "units": [
+    { "id": "CAT01", "title": "Number & Operations", "topics": ["integers", "fractions-decimals-pct", "ratios-proportions", "powers-roots"] },
+    { "id": "CAT02", "title": "Patterns & Sequences", "topics": ["number-sequences", "figural-sequences"] },
+    { "id": "CAT03", "title": "Algebra & Equations", "topics": ["solving-unknowns", "word-problems", "substitution"] },
+    { "id": "CAT04", "title": "Rates & Proportional Reasoning", "topics": ["speed-distance-time", "work-rate", "mixtures"] },
+    { "id": "CAT05", "title": "Geometry & Spatial Reasoning", "topics": ["perimeter-area", "volume-surface-area", "angles-lines", "coord-geometry"] },
+    { "id": "CAT06", "title": "Data Interpretation", "topics": ["tables-charts", "averages", "probability"] },
+    { "id": "CAT07", "title": "Logic & Reasoning", "topics": ["venn-sets", "matrix-grid", "logical-deduction"] },
+    { "id": "CAT08", "title": "Time, Money & Everyday Maths", "topics": ["time-problems", "money-finance"] }
+  ],
+  "assessmentStyle": {
+    "defaultQuestionType": "mcq",
+    "calculatorPolicy": "none",
+    "timeMinutes": 30,
+    "marksPerQuestion": 1
+  }
+}

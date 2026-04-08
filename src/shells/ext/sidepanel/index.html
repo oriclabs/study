@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Study</h1>
+    </header>
+
+    <div class="content">
+      <section class="controls-block">
+        <label for="curriculum-select">Curriculum</label>
+        <select id="curriculum-select"></select>
+        <div id="curriculum-info" class="muted small"></div>
+
+        <label for="subject-select">Subject</label>
+        <select id="subject-select"></select>
+
+        <label for="lesson-select">Lesson</label>
+        <select id="lesson-select"></select>
+
+        <div class="button-row">
+          <button id="play-btn" class="primary">▶ Play</button>
+          <button id="pause-btn" disabled>⏸</button>
+          <button id="reset-btn">↺</button>
+        </div>
+
+        <label for="custom-input">Solve your own equation</label>
+        <input id="custom-input" type="text" placeholder="e.g. 2x + 3 = 7" />
+        <button id="solve-btn">Solve &amp; play</button>
+
+        <label for="speed">Speed <span id="speed-val">1.0x</span></label>
+        <input id="speed" type="range" min="0.5" max="3" step="0.1" value="1" />
+
+        <label for="theme">Theme</label>
+        <select id="theme">
+          <option value="whiteboard">Whiteboard</option>
+          <option value="chalkboard">Chalkboard</option>
+          <option value="marker">Marker</option>
+        </select>
+      </section>
+
+      <div class="canvas-wrap">
+        <canvas id="whiteboard" width="720" height="520"></canvas>
+      </div>
+
+      <section id="practice-panel" class="practice-panel" hidden>
+        <div class="practice-header">
+          <h2>Practice</h2>
+          <span id="practice-progress" class="muted small"></span>
+        </div>
+        <div id="practice-prompt" class="practice-prompt"></div>
+        <div id="practice-choices" class="choices" hidden></div>
+        <input id="practice-answer" type="text" placeholder="Your answer" />
+        <div class="button-row">
+          <button id="check-btn" class="primary">Check</button>
+          <button id="hint-btn">Hint</button>
+          <button id="next-q-btn" disabled>Next →</button>
+        </div>
+        <div id="practice-hint" class="feedback hint" hidden></div>
+        <div id="practice-feedback" class="feedback" hidden></div>
+      </section>
+
+      <section class="stats-block">
+        <div class="label">Progress</div>
+        <div id="stats-summary">No attempts yet.</div>
+      </section>
+    </div>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

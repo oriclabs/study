@@ -1,0 +1,28 @@
+{
+  "id": "vic-selective-verbal",
+  "version": "2025",
+  "region": "AU-VIC",
+  "subject": "verbal",
+  "displayName": "VIC Selective — Verbal Reasoning",
+  "exam": "VCAA-Selective",
+  "locale": "en-AU",
+  "description": "Victorian Selective Entry Examination — Verbal Reasoning",
+  "units": [
+    { "id": "CAT01", "title": "Word Analogies", "topics": ["analogies"] },
+    { "id": "CAT02", "title": "Synonyms & Antonyms", "topics": ["synonyms", "antonyms"] },
+    { "id": "CAT03", "title": "Word Relationships & Classification", "topics": ["odd-one-out", "word-classification", "hidden-words"] },
+    { "id": "CAT04", "title": "Vocabulary & Word Knowledge", "topics": ["word-meanings", "prefixes-suffixes", "multiple-meanings"] },
+    { "id": "CAT05", "title": "Sentence Completion & Cloze", "topics": ["single-blank", "double-blank", "cloze"] },
+    { "id": "CAT06", "title": "Reading Comprehension", "topics": ["comprehension", "inference"] },
+    { "id": "CAT07", "title": "Logical Reasoning", "topics": ["syllogisms", "coding-decoding", "statement-conclusion"] },
+    { "id": "CAT08", "title": "Grammar & Language Structure", "topics": ["parts-of-speech", "grammar-rules", "sentence-rearranging"] },
+    { "id": "CAT09", "title": "Idioms, Proverbs & Figurative Language", "topics": ["idioms", "proverbs", "figurative"] },
+    { "id": "CAT10", "title": "Spelling & Word Patterns", "topics": ["spelling-rules", "word-completion"] }
+  ],
+  "assessmentStyle": {
+    "defaultQuestionType": "mcq",
+    "calculatorPolicy": "none",
+    "timeMinutes": 30,
+    "marksPerQuestion": 1
+  }
+}

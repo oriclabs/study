@@ -1,0 +1,31 @@
+{
+  "id": "vic-selective-math",
+  "version": "2025",
+  "region": "AU-VIC",
+  "subject": "math",
+  "displayName": "VIC Selective — Mathematics",
+  "exam": "VCAA-Selective",
+  "locale": "en-AU",
+  "description": "Victorian Selective Entry Examination — Mathematics",
+  "units": [
+    { "id": "CAT01", "title": "Number Systems & Properties", "topics": ["number-types", "factors-multiples", "integer-ops"] },
+    { "id": "CAT02", "title": "Fractions, Decimals & Percentages", "topics": ["fractions", "decimals", "percentages"] },
+    { "id": "CAT03", "title": "Ratio, Proportion & Rates", "topics": ["ratios", "proportion", "rates"] },
+    { "id": "CAT04", "title": "Powers, Roots & Scientific Notation", "topics": ["index-laws", "surds", "scientific-notation"] },
+    { "id": "CAT05", "title": "Algebra & Equations", "topics": ["expressions", "linear-equations", "simultaneous", "inequalities", "quadratics"] },
+    { "id": "CAT06", "title": "Patterns & Sequences", "topics": ["arithmetic-seq", "geometric-seq", "other-seq"] },
+    { "id": "CAT07", "title": "Geometry — Angles & Triangles", "topics": ["angle-properties", "triangles"] },
+    { "id": "CAT08", "title": "Geometry — Shapes & Circles", "topics": ["quadrilaterals", "polygons", "circle-theorems"] },
+    { "id": "CAT09", "title": "Mensuration", "topics": ["perimeter", "area", "surface-area", "volume"] },
+    { "id": "CAT10", "title": "Coordinate Geometry", "topics": ["coord-geometry"] },
+    { "id": "CAT11", "title": "Statistics & Probability", "topics": ["central-tendency", "probability"] },
+    { "id": "CAT12", "title": "Financial Mathematics", "topics": ["profit-loss", "interest"] },
+    { "id": "CAT13", "title": "Logic & Problem Solving", "topics": ["problem-solving", "venn-diagrams", "combinatorics"] }
+  ],
+  "assessmentStyle": {
+    "defaultQuestionType": "mcq",
+    "calculatorPolicy": "none",
+    "timeMinutes": 30,
+    "marksPerQuestion": 1
+  }
+}

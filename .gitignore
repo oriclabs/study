@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.vite/
+.DS_Store
+*.local
+
+# Exclude raw source notes and docs (content lives in public/content/)
+snotes/
+docs/
+*.md
+!README.md
+
+# Exclude demo prototype (superseded by src/)
+demo/
+
+# Editor/OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# Build tool caches
+.tsbuildinfo

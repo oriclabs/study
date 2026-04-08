@@ -1,0 +1,40 @@
+{
+  "lessons": [],
+  "curricula": [
+    {
+      "id": "vic-selective-math",
+      "version": "2025",
+      "region": "AU-VIC",
+      "subject": "math",
+      "displayName": "VIC Selective — Mathematics",
+      "exam": "VCAA-Selective",
+      "locale": "en-AU",
+      "path": "curricula/vic-selective-math.json"
+    },
+    {
+      "id": "vic-selective-verbal",
+      "version": "2025",
+      "region": "AU-VIC",
+      "subject": "verbal",
+      "displayName": "VIC Selective — Verbal Reasoning",
+      "exam": "VCAA-Selective",
+      "locale": "en-AU",
+      "path": "curricula/vic-selective-verbal.json"
+    },
+    {
+      "id": "vic-selective-quantitative",
+      "version": "2025",
+      "region": "AU-VIC",
+      "subject": "numerical",
+      "displayName": "VIC Selective — Quantitative Reasoning",
+      "exam": "VCAA-Selective",
+      "locale": "en-AU",
+      "path": "curricula/vic-selective-quantitative.json"
+    }
+  ],
+  "topics": {
+    "math": "_topics/math.json",
+    "verbal": "_topics/verbal.json",
+    "numerical": "_topics/numerical.json"
+  }
+}

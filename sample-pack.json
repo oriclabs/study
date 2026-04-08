@@ -1,0 +1,128 @@
+{
+  "packId": "vic-year9-sample",
+  "packVersion": "2025.1",
+  "exam": "VIC Year 9 (Sample)",
+  "description": "Sample content pack showing the full format with notes, practice, and mock exams",
+  "subjects": [
+    {
+      "id": "math",
+      "label": "Mathematics",
+      "notes": {
+        "exam": {
+          "name": "VIC Year 9 Mathematics",
+          "subject": "Mathematics",
+          "golden_rules": [
+            "Show all working — marks are given for method, not just answers",
+            "Check units in every answer"
+          ]
+        },
+        "categories": [
+          {
+            "category": "Linear Algebra",
+            "topics": [
+              {
+                "id": "Y9-T01",
+                "title": "Solving Linear Equations",
+                "concept_explanation": "A linear equation has a variable raised to the power of 1. Solving means finding the value that makes the equation true.",
+                "examples": [
+                  {
+                    "question": "Solve: 3x + 7 = 22",
+                    "solution_steps": [
+                      "3x + 7 = 22",
+                      "3x = 15",
+                      "x = 5"
+                    ],
+                    "answer": "x = 5",
+                    "difficulty": 2
+                  }
+                ],
+                "tips_and_tricks": [
+                  "Whatever you do to one side, do to the other"
+                ],
+                "solving_strategy": [
+                  "Simplify each side",
+                  "Move variable terms to one side",
+                  "Move constants to the other side",
+                  "Divide by the coefficient"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "practice": [
+        {
+          "id": "Y9-P01",
+          "topic": "linear-equations",
+          "question": "Solve: 4x - 3 = 13",
+          "options": [
+            "x = 2",
+            "x = 3",
+            "x = 4",
+            "x = 5"
+          ],
+          "answer": "x = 4",
+          "explanation": "4x = 16, so x = 4",
+          "solutionSteps": [
+            "4x - 3 = 13",
+            "4x = 16",
+            "x = 4"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "Y9-P02",
+          "topic": "linear-equations",
+          "question": "Solve: 2(x + 3) = 14",
+          "options": [
+            "x = 3",
+            "x = 4",
+            "x = 5",
+            "x = 7"
+          ],
+          "answer": "x = 4",
+          "solutionSteps": [
+            "2x + 6 = 14",
+            "2x = 8",
+            "x = 4"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "Y9-P03",
+          "topic": "linear-equations",
+          "question": "Solve: 5x + 2 = 3x + 10",
+          "options": [
+            "x = 3",
+            "x = 4",
+            "x = 5",
+            "x = 6"
+          ],
+          "answer": "x = 4",
+          "solutionSteps": [
+            "5x - 3x = 10 - 2",
+            "2x = 8",
+            "x = 4"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "mockExams": [
+        {
+          "id": "Y9-MOCK-01",
+          "title": "Linear Equations - Quick Quiz",
+          "timeMinutes": 10,
+          "questionCount": 3,
+          "topics": [
+            "linear-equations"
+          ],
+          "questionIds": [
+            "Y9-P01",
+            "Y9-P02",
+            "Y9-P03"
+          ]
+        }
+      ]
+    }
+  ]
+}

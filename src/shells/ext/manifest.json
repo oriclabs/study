@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Study — learn by watching it solved",
+  "short_name": "Study",
+  "version": "0.1.0",
+  "description": "Handwritten, animated math lessons with spaced-repetition practice. Offline-first.",
+  "permissions": ["storage", "sidePanel", "downloads"],
+  "action": {
+    "default_title": "Study",
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["content/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

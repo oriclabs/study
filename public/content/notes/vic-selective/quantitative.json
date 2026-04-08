@@ -1,0 +1,3758 @@
+{
+  "exam": {
+    "name": "Victorian Selective Entry Examination",
+    "subject": "Quantitative Reasoning",
+    "version": "2025",
+    "description": "Comprehensive study notes to master all quantitative reasoning problem types for the Victorian Selective Entry Exam.",
+    "usage_guide": "Read each section carefully. Attempt example problems before reading the solution. Revisit tips regularly. Practise timed papers to build speed.",
+    "golden_rule": "Read every question twice. Selective exam questions often contain a subtle condition (e.g., 'which is NOT true', 'how many MORE than') that completely changes the answer."
+  },
+  "exam_overview": {
+    "format": "Multiple choice (typically 4–5 options per question)",
+    "time_per_question_seconds": 40,
+    "difficulty_range": "Straightforward to highly tricky",
+    "skills_tested": [
+      {
+        "skill": "Number sense",
+        "description": "Estimating, comparing, mental arithmetic"
+      },
+      {
+        "skill": "Algebraic thinking",
+        "description": "Finding unknowns, spotting relationships"
+      },
+      {
+        "skill": "Pattern recognition",
+        "description": "Extending sequences, finding rules"
+      },
+      {
+        "skill": "Spatial reasoning",
+        "description": "Working with shapes, area, volume"
+      },
+      {
+        "skill": "Data literacy",
+        "description": "Reading graphs, calculating averages"
+      },
+      {
+        "skill": "Logic",
+        "description": "Deducing answers from given conditions"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "CAT01",
+      "category": "Number & Operations",
+      "topics": [
+        {
+          "id": "CAT01-T01",
+          "title": "Arithmetic with Integers",
+          "identification_cues": [
+            "The question involves whole numbers (positive or negative)",
+            "You see operations: +, −, ×, ÷",
+            "Key words: total, difference, product, quotient, sum, how many more",
+            "Often disguised as a word problem: 'a bank account starts at −$45 and gains $120…'"
+          ],
+          "sign_rules": [
+            "Negative × Negative = Positive",
+            "Negative × Positive = Negative",
+            "Adding a negative = Subtracting",
+            "Subtracting a negative = Adding"
+          ],
+          "examples": [
+            {
+              "question": "A submarine is at −240 m. It rises 75 m, then descends 130 m. What is its final depth?",
+              "solution_steps": [
+                "Start: −240",
+                "Rise 75: −240 + 75 = −165",
+                "Descend 130: −165 − 130 = −295"
+              ],
+              "answer": "−295 m",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Number lines help with negatives — draw one mentally",
+              "explanation": "Visualise negative numbers and inequalities by placing values on a mental number line.",
+              "example": "-3 + 5: start at -3, move 5 right → land on 2. Or: -3 is left of -1, so -3 < -1"
+            },
+            {
+              "tip": "For large multiplications, break apart: 48 × 25 = 48 × 100 ÷ 4 = 4800 ÷ 4 = 1200",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Always check: does your answer make sense in context?"
+            ],
+            "worked_example": {
+              "question": "A submarine is at −240 m. It rises 75 m, then descends 130 m. What is its final depth?",
+              "steps": [
+                "Always check: does your answer make sense in context? → Start: −240",
+                "Answer: −295 m"
+              ],
+              "answer": "−295 m"
+            }
+          },
+          "concept_explanation": "Direct computation with negative numbers, large numbers, or tricky sequences of operations.",
+          "topic_id": "sequences.arithmetic",
+          "common_mistakes": [
+            "Making sign errors with negative numbers, especially (−) × (−) = (+)",
+            "Not following BODMAS order — brackets and powers before multiplication/division",
+            "Rushing and making careless arithmetic errors under time pressure",
+            "Not estimating first to check whether the answer is reasonable"
+          ],
+          "related_topics": [
+            "Fractions, Decimals & Percentages",
+            "Powers, Roots & Order of Operations",
+            "Mental Math Speed Tricks"
+          ]
+        },
+        {
+          "id": "CAT01-T02",
+          "title": "Fractions, Decimals & Percentages",
+          "identification_cues": [
+            "You see fractions (a/b), decimals (0.xx), or the % symbol",
+            "Key words: of, out of, percent, proportion, fraction of",
+            "'Which is largest: 3/7, 0.44, or 42%?'"
+          ],
+          "conversions": [
+            {
+              "from": "Fraction",
+              "to": "Decimal",
+              "method": "Divide numerator by denominator",
+              "example": "3/8 = 3 ÷ 8 = 0.375"
+            },
+            {
+              "from": "Decimal",
+              "to": "Percentage",
+              "method": "Multiply by 100",
+              "example": "0.375 × 100 = 37.5%"
+            },
+            {
+              "from": "Percentage",
+              "to": "Fraction",
+              "method": "Write over 100, simplify",
+              "example": "37.5% = 375/1000 = 3/8"
+            }
+          ],
+          "benchmark_fractions": [
+            {
+              "fraction": "1/4",
+              "decimal": 0.25,
+              "percentage": "25%"
+            },
+            {
+              "fraction": "1/3",
+              "decimal": 0.333,
+              "percentage": "33.3%"
+            },
+            {
+              "fraction": "1/2",
+              "decimal": 0.5,
+              "percentage": "50%"
+            },
+            {
+              "fraction": "2/3",
+              "decimal": 0.667,
+              "percentage": "66.7%"
+            },
+            {
+              "fraction": "3/4",
+              "decimal": 0.75,
+              "percentage": "75%"
+            }
+          ],
+          "examples": [
+            {
+              "question": "A jacket costs $180. It is reduced by 15%, then the sale price is increased by 10%. What is the final price?",
+              "solution_steps": [
+                "After 15% reduction: 180 × 0.85 = $153",
+                "After 10% increase: 153 × 1.10 = $168.30"
+              ],
+              "answer": "$168.30",
+              "key_insight": "A 15% decrease followed by 10% increase is NOT the same as a 5% decrease!",
+              "difficulty": 1
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Benchmark fractions: 1/4=0.25, 1/3≈0.333, 1/2=0.5, 2/3≈0.667, 3/4=0.75. Memorise these.",
+              "explanation": "Knowing common fraction-decimal equivalents lets you compare and convert instantly.",
+              "example": "Is 0.4 bigger than 1/3? 1/3 = 0.333, so yes 0.4 > 0.333"
+            },
+            {
+              "tip": "Quick % calculations: 10% = move decimal left one place; 5% = half of 10%; 1% = move decimal left two places",
+              "explanation": "Build up percentages from easy ones: 10% (÷10), 5% (half of 10%), 1% (÷100).",
+              "example": "35% of 200: 10% = 20, 30% = 60, 5% = 10 → 35% = 70"
+            },
+            {
+              "tip": "'Of' always means multiply: '30% of 50' = 0.30 × 50 = 15",
+              "explanation": "In percentage/fraction problems, the word \"of\" always means multiplication.",
+              "example": "25% of 80 = 0.25 × 80 = 20. Three-quarters of 60 = 3/4 × 60 = 45"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Identify which representation is easiest for the problem",
+              "Convert between forms as needed: fraction ↔ decimal ↔ percentage",
+              "For comparison: convert all to the same form (usually decimals)",
+              "Use benchmark values: 1/4=25%, 1/3≈33%, 1/2=50%, 3/4=75%"
+            ],
+            "worked_example": {
+              "question": "A jacket costs $180. It is reduced by 15%, then the sale price is increased by 10%. What is the final price?",
+              "steps": [
+                "Identify which representation is easiest for the problem → After 15% reduction: 180 × 0.85 = $153",
+                "Convert between forms as needed: fraction ↔ decimal ↔ percentage → After 10% increase: 153 × 1.10 = $168.30",
+                "For comparison: convert all to the same form (usually decimals)",
+                "Use benchmark values: 1/4=25%, 1/3≈33%, 1/2=50%, 3/4=75%"
+              ],
+              "answer": "$168.30"
+            }
+          },
+          "concept_explanation": "Converting between forms, ordering fractions, finding a percentage of a quantity, percentage increase/decrease.",
+          "key_formulas": [
+            "Percentage of a quantity: (P/100) × amount",
+            "Percentage change: (change ÷ original) × 100",
+            "New value after X% increase: original × (1 + X/100)",
+            "New value after X% decrease: original × (1 − X/100)"
+          ],
+          "topic_id": "fractions.fractions",
+          "common_mistakes": [
+            "Not knowing key fraction-decimal-percentage equivalences by heart (1/8 = 0.125 = 12.5%)",
+            "Adding fractions without finding a common denominator",
+            "Calculating percentage of a number incorrectly (e.g., 15% of 80 ≠ 80 ÷ 15)",
+            "Confusing 'what percentage is A of B' (A/B × 100) with 'what is A% of B' (A/100 × B)"
+          ],
+          "related_topics": [
+            "Arithmetic with Integers",
+            "Ratios & Proportions",
+            "Money & Finance"
+          ]
+        },
+        {
+          "id": "CAT01-T03",
+          "title": "Ratios & Proportions",
+          "identification_cues": [
+            "You see a colon ratio (e.g., 3:4:5) or the phrase 'for every'",
+            "Problems involve sharing, mixing, or scaling"
+          ],
+          "solving_steps_sharing": [
+            "Add all parts of the ratio together",
+            "Divide the total by the number of parts to get 1 part",
+            "Multiply to find each share"
+          ],
+          "proportion_types": [
+            {
+              "type": "Direct proportion",
+              "description": "More of one → more of the other",
+              "formula": "quantity₁ / quantity₂ = quantity₁' / quantity₂'",
+              "method": "Cross-multiply to solve"
+            },
+            {
+              "type": "Inverse proportion",
+              "description": "More of one → less of the other",
+              "formula": "n₁ × d₁ = n₂ × d₂",
+              "example": "3 workers × 8 days = 6 workers × 4 days"
+            }
+          ],
+          "examples": [
+            {
+              "question": "Blue, red, and yellow paint are mixed in the ratio 3:5:2. If 240 mL of red paint is used, what is the total volume?",
+              "solution_steps": [
+                "Red = 5 parts = 240 mL → 1 part = 48 mL",
+                "Total parts = 3 + 5 + 2 = 10",
+                "Total = 10 × 48 = 480 mL"
+              ],
+              "answer": "480 mL",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Always label your parts. Write '1 part = ___' explicitly.",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems."
+            },
+            {
+              "tip": "Equivalent ratios: 2:3 = 4:6 = 6:9. Simplify by dividing by HCF",
+              "explanation": "HCF uses the LOWEST powers because we want what both numbers share.",
+              "example": "12 = 2² × 3, 18 = 2 × 3². Common primes: 2¹ × 3¹ = 6"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "If asked for ratio of X to Y, write X:Y, not Y:X"
+            ],
+            "worked_example": {
+              "question": "Blue, red, and yellow paint are mixed in the ratio 3:5:2. If 240 mL of red paint is used, what is the total volume?",
+              "steps": [
+                "If asked for ratio of X to Y, write X:Y, not Y:X → Red = 5 parts = 240 mL → 1 part = 48 mL",
+                "Answer: 480 mL"
+              ],
+              "answer": "480 mL"
+            }
+          },
+          "concept_explanation": "Sharing an amount in a given ratio, scaling up recipes, direct and inverse proportion.",
+          "topic_id": "ratio.ratios",
+          "common_mistakes": [
+            "Confusing the order of the ratio — 2:3 boys to girls is different from 3:2",
+            "Not simplifying ratios or cross-multiplying correctly",
+            "Forgetting to add ratio parts to find the total shares",
+            "Applying ratios to the wrong quantity (e.g., ratio of boys to total vs boys to girls)"
+          ],
+          "related_topics": [
+            "Fractions, Decimals & Percentages",
+            "Arithmetic with Integers",
+            "Word Problems with Variables"
+          ]
+        },
+        {
+          "id": "CAT01-T04",
+          "title": "Powers, Roots & Order of Operations",
+          "identification_cues": [
+            "You see exponent notation (², ³, ⁴) or square root symbols (√)",
+            "The question has multiple operations mixed together"
+          ],
+          "bodmas_order": [
+            "B — Brackets",
+            "O — Orders (powers and roots)",
+            "D — Division (left to right)",
+            "M — Multiplication (left to right)",
+            "A — Addition (left to right)",
+            "S — Subtraction (left to right)"
+          ],
+          "perfect_squares": [
+            {
+              "n": 1,
+              "n_squared": 1
+            },
+            {
+              "n": 2,
+              "n_squared": 4
+            },
+            {
+              "n": 3,
+              "n_squared": 9
+            },
+            {
+              "n": 4,
+              "n_squared": 16
+            },
+            {
+              "n": 5,
+              "n_squared": 25
+            },
+            {
+              "n": 6,
+              "n_squared": 36
+            },
+            {
+              "n": 7,
+              "n_squared": 49
+            },
+            {
+              "n": 8,
+              "n_squared": 64
+            },
+            {
+              "n": 9,
+              "n_squared": 81
+            },
+            {
+              "n": 10,
+              "n_squared": 100
+            },
+            {
+              "n": 11,
+              "n_squared": 121
+            },
+            {
+              "n": 12,
+              "n_squared": 144
+            },
+            {
+              "n": 13,
+              "n_squared": 169
+            },
+            {
+              "n": 14,
+              "n_squared": 196
+            },
+            {
+              "n": 15,
+              "n_squared": 225
+            }
+          ],
+          "perfect_cubes": [
+            {
+              "n": 1,
+              "n_cubed": 1
+            },
+            {
+              "n": 2,
+              "n_cubed": 8
+            },
+            {
+              "n": 3,
+              "n_cubed": 27
+            },
+            {
+              "n": 4,
+              "n_cubed": 64
+            },
+            {
+              "n": 5,
+              "n_cubed": 125
+            }
+          ],
+          "examples": [
+            {
+              "question": "Calculate: 4 + 3² × (8 − 5) ÷ 9",
+              "solution_steps": [
+                "Brackets: 8 − 5 = 3 → 4 + 3² × 3 ÷ 9",
+                "Orders: 3² = 9 → 4 + 9 × 3 ÷ 9",
+                "Multiply: 9 × 3 = 27 → 4 + 27 ÷ 9",
+                "Divide: 27 ÷ 9 = 3 → 4 + 3",
+                "Add: 7"
+              ],
+              "answer": "7",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Common trap: −3² ≠ (−3)². Without brackets: −(3²) = −9. With brackets: (−3)² = +9",
+              "explanation": "This is a common mistake that costs marks in exams. Make sure you understand the difference."
+            },
+            {
+              "tip": "Memorise squares up to 15² = 225",
+              "explanation": "Knowing perfect squares up to 225 helps with factoring, surds, and mental estimation.",
+              "example": "12 squared = 144, 13 squared = 169, 14 squared = 196, 15 squared = 225"
+            },
+            {
+              "tip": "Memorise cubes 1³ through 5³",
+              "explanation": "Perfect cubes come up in volume problems and simplifying cube roots.",
+              "example": "2 cubed = 8, 3 cubed = 27, 4 cubed = 64, 5 cubed = 125"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Write the ratio in the order stated in the question",
+              "Simplify by dividing by the HCF",
+              "For sharing: find total parts → value of one part → value of each share",
+              "For proportion: set up equivalent ratios and cross-multiply"
+            ],
+            "worked_example": {
+              "question": "Calculate: 4 + 3² × (8 − 5) ÷ 9",
+              "steps": [
+                "Write the ratio in the order stated in the question → Brackets: 8 − 5 = 3 → 4 + 3² × 3 ÷ 9",
+                "Simplify by dividing by the HCF → Orders: 3² = 9 → 4 + 9 × 3 ÷ 9",
+                "For sharing: find total parts → value of one part → value of each share → Multiply: 9 × 3 = 27 → 4 + 27 ÷ 9",
+                "For proportion: set up equivalent ratios and cross-multiply → Divide: 27 ÷ 9 = 3 → 4 + 3"
+              ],
+              "answer": "7"
+            }
+          },
+          "concept_explanation": "Evaluating expressions with exponents, roots, and mixed operations using BODMAS.",
+          "topic_id": "sequences.arithmetic",
+          "common_mistakes": [
+            "Evaluating left to right without respecting BODMAS order",
+            "Confusing 2³ (= 8) with 3² (= 9) — base and exponent are not interchangeable",
+            "Not computing brackets first in expressions like 3 × (4 + 2)²",
+            "Forgetting that −3² = −9 but (−3)² = 9"
+          ],
+          "related_topics": [
+            "Arithmetic with Integers",
+            "Number Sequences",
+            "Solving for Unknowns"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAT02",
+      "category": "Patterns & Sequences",
+      "topics": [
+        {
+          "id": "CAT02-T01",
+          "title": "Number Sequences",
+          "identification_cues": [
+            "A row or column of numbers with a blank or question mark",
+            "Asked for: next term, missing number, or rule of the sequence"
+          ],
+          "sequence_types": [
+            {
+              "type": "Arithmetic",
+              "example": "3, 7, 11, 15",
+              "rule": "+4 each time",
+              "nth_term_formula": "first term + (n−1) × common difference"
+            },
+            {
+              "type": "Geometric",
+              "example": "2, 6, 18, 54",
+              "rule": "×3 each time",
+              "nth_term_formula": "first term × r^(n−1)"
+            },
+            {
+              "type": "Square numbers",
+              "example": "1, 4, 9, 16, 25",
+              "rule": "n²"
+            },
+            {
+              "type": "Triangular numbers",
+              "example": "1, 3, 6, 10, 15",
+              "rule": "+1, +2, +3, +4..."
+            },
+            {
+              "type": "Fibonacci-style",
+              "example": "1, 1, 2, 3, 5, 8",
+              "rule": "each term = sum of previous two"
+            },
+            {
+              "type": "Alternating",
+              "example": "2, 9, 4, 16, 8, 25",
+              "rule": "two interleaved sequences"
+            }
+          ],
+          "examples": [
+            {
+              "question": "Find the next two terms: 3, 4, 6, 9, 13, ___, ___",
+              "solution_steps": [
+                "Differences: 1, 2, 3, 4 → each difference increases by 1",
+                "Next differences: 5, 6",
+                "13 + 5 = 18, 18 + 6 = 24"
+              ],
+              "answer": "18, 24",
+              "difficulty": 2
+            },
+            {
+              "question": "What comes next: 2, 6, 18, 54, ?",
+              "options": [
+                "108",
+                "128",
+                "162",
+                "216"
+              ],
+              "solution_steps": [
+                "Each term × 3: 2→6→18→54",
+                "Next: 54 × 3 = 162"
+              ],
+              "answer": "162",
+              "difficulty": 1
+            },
+            {
+              "question": "Find the next term: 1, 4, 9, 16, 25, ?",
+              "options": [
+                "30",
+                "34",
+                "36",
+                "49"
+              ],
+              "solution_steps": [
+                "These are perfect squares: 1², 2², 3², 4², 5²",
+                "Next: 6² = 36"
+              ],
+              "answer": "36",
+              "difficulty": 1
+            },
+            {
+              "question": "What comes next: 3, 5, 9, 15, 23, ?",
+              "options": [
+                "31",
+                "33",
+                "35",
+                "37"
+              ],
+              "solution_steps": [
+                "Differences: 2, 4, 6, 8",
+                "Differences increase by 2 each time",
+                "Next difference: 10",
+                "23 + 10 = 33"
+              ],
+              "answer": "33",
+              "difficulty": 2
+            },
+            {
+              "question": "Find the missing number: 2, 5, 11, 23, ?, 95",
+              "options": [
+                "45",
+                "47",
+                "48",
+                "50"
+              ],
+              "solution_steps": [
+                "Pattern: ×2 + 1",
+                "2→5 (×2+1), 5→11 (×2+1), 11→23 (×2+1)",
+                "23×2+1 = 47",
+                "Check: 47×2+1 = 95 ✓"
+              ],
+              "answer": "47",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "If stuck after 1st differences, find 2nd differences. If constant, rule involves n²",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "Check if adjacent terms have a constant ratio (multiply/divide)",
+              "explanation": "A quick verification step catches careless errors and can save marks."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Always write out differences between terms first — most powerful technique",
+              "For alternating sequences, look at every other term separately"
+            ],
+            "worked_example": {
+              "question": "What comes next: 2, 6, 18, 54, ?",
+              "steps": [
+                "Always write out differences between terms first — most powerful technique → Each term × 3: 2→6→18→54",
+                "For alternating sequences, look at every other term separately → Next: 54 × 3 = 162"
+              ],
+              "answer": "162"
+            }
+          },
+          "concept_explanation": "A series of numbers where you must find the next term(s) or a missing term.",
+          "topic_id": "sequences",
+          "common_mistakes": [
+            "Assuming the pattern is always simple addition — check multiplication, squares, and other operations",
+            "Not checking second differences when first differences are not constant",
+            "Looking at too few terms to identify the pattern reliably",
+            "Not considering interleaved sequences (odd positions follow one rule, even positions another)"
+          ],
+          "related_topics": [
+            "Shape / Figural Sequences",
+            "Powers, Roots & Order of Operations",
+            "Solving for Unknowns"
+          ]
+        },
+        {
+          "id": "CAT02-T02",
+          "title": "Shape / Figural Sequences",
+          "identification_cues": [
+            "Diagrams with shapes, dots, or tiles",
+            "Asked for: total count at step N, or the rule"
+          ],
+          "examples": [
+            {
+              "question": "Figure 1 has 1 tile, Figure 2 has 5, Figure 3 has 13, Figure 4 has 25. How many tiles in Figure 6?",
+              "solution_steps": [
+                "Differences: 4, 8, 12 → 2nd differences: 4, 4 (constant) → quadratic",
+                "Coefficient of n²: 4/2 = 2",
+                "Formula: 2n² − 2n + 1. Check: n=1 → 1 ✓, n=2 → 5 ✓",
+                "Figure 6: 2(36) − 2(6) + 1 = 72 − 12 + 1 = 61"
+              ],
+              "answer": "61 tiles",
+              "difficulty": 2
+            },
+            {
+              "question": "A pattern adds 3 dots per step: Step 1 has 1 dot, Step 2 has 4 dots. How many dots at Step 10?",
+              "options": [
+                "28",
+                "30",
+                "31",
+                "33"
+              ],
+              "solution_steps": [
+                "Step n = 1 + 3(n−1)",
+                "Step 10 = 1 + 3(9) = 28"
+              ],
+              "answer": "28",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Always build a table of values",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems."
+            },
+            {
+              "tip": "If 2nd differences are constant, the formula involves n²",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "Draw or imagine Figure 0 — sometimes the formula becomes obvious",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems.",
+              "example": "sometimes the formula becomes obvious"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Write out the first few terms and look for a pattern",
+              "Calculate differences between consecutive terms",
+              "If differences are constant → arithmetic sequence",
+              "If differences grow → try second differences or multiplication patterns"
+            ],
+            "worked_example": {
+              "question": "Figure 1 has 1 tile, Figure 2 has 5, Figure 3 has 13, Figure 4 has 25. How many tiles in Figure 6?",
+              "steps": [
+                "Write out the first few terms and look for a pattern → Differences: 4, 8, 12 → 2nd differences: 4, 4 (constant) → quadratic",
+                "Calculate differences between consecutive terms → Coefficient of n²: 4/2 = 2",
+                "If differences are constant → arithmetic sequence → Formula: 2n² − 2n + 1. Check: n=1 → 1 ✓, n=2 → 5 ✓",
+                "If differences grow → try second differences or multiplication patterns → Figure 6: 2(36) − 2(6) + 1 = 72 − 12 + 1 = 61",
+                "Answer: 61 tiles"
+              ],
+              "answer": "61 tiles"
+            }
+          },
+          "concept_explanation": "A series of figures that change progressively — find a count at step N or the rule.",
+          "topic_id": "patterns",
+          "common_mistakes": [
+            "Focusing on only one aspect of the change while missing other simultaneous patterns",
+            "Confusing clockwise and anticlockwise rotation directions",
+            "Not checking your predicted answer against ALL previous figures in the sequence",
+            "Overlooking small details like dots, lines, or shading changes"
+          ],
+          "related_topics": [
+            "Visual Pattern Completion",
+            "Shape Rotations",
+            "Reflections & Symmetry"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Spatial & Visual Reasoning",
+      "topics": [
+        {
+          "id": "SPATIAL-T01",
+          "title": "Shape Rotations",
+          "identification_cues": [
+            "Which figure shows the shape after a 90° clockwise turn?",
+            "What does this pattern look like rotated?",
+            "Select the rotated version"
+          ],
+          "key_rules": [
+            "90° clockwise: top goes to right, right goes to bottom, bottom goes to left, left goes to top",
+            "180°: everything flips upside-down AND left-right",
+            "270° clockwise = 90° anticlockwise",
+            "360° = back to original"
+          ],
+          "examples": [
+            {
+              "question": "An L-shape points up-right. After 90° clockwise rotation, which direction does it point?",
+              "options": [
+                "Down-right",
+                "Down-left",
+                "Up-left",
+                "Right-down"
+              ],
+              "solution_steps": [
+                "Top → right, right → bottom",
+                "Up-right becomes right-down, which is down-right"
+              ],
+              "answer": "Down-right",
+              "difficulty": 1
+            },
+            {
+              "question": "A triangle with a dot on its top-left corner is rotated 180°. Where is the dot now?",
+              "options": [
+                "Top-right",
+                "Bottom-right",
+                "Bottom-left",
+                "Top-left"
+              ],
+              "solution_steps": [
+                "180° rotation: top-left → bottom-right",
+                "Everything flips diagonally"
+              ],
+              "answer": "Bottom-right",
+              "difficulty": 1
+            },
+            {
+              "question": "A flag shape 🏳 pointing right is rotated 90° anticlockwise, then reflected in a vertical line. What is the final orientation?",
+              "options": [
+                "Pointing up",
+                "Pointing down",
+                "Pointing left",
+                "Pointing right"
+              ],
+              "solution_steps": [
+                "90° ACW: right → up (flag points up)",
+                "Reflect vertically: flag still points up (vertical reflection flips left/right, not up/down)",
+                "Wait — a flag pointing up, reflected in vertical axis: the flag part flips side. But the direction (up) stays.",
+                "Actually: 90° ACW makes it point up. Vertical reflection keeps it pointing up but mirrors the flag detail."
+              ],
+              "answer": "Pointing up",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Use your hand or a small piece of paper to physically rotate — it's faster than imagining",
+              "explanation": "This shortcut saves valuable time in timed exams while maintaining accuracy.",
+              "example": "it's faster than imagining"
+            },
+            {
+              "tip": "For 180°, just flip everything: top↔bottom AND left↔right",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "90° CW tip: turn the page 90° clockwise and see what the shape looks like",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Always check at least 2 features (e.g., a dot AND a corner) to avoid mistakes"
+            ],
+            "worked_example": {
+              "question": "An L-shape points up-right. After 90° clockwise rotation, which direction does it point?",
+              "steps": [
+                "Always check at least 2 features (e.g., a dot AND a corner) to avoid mistakes → Top → right, right → bottom",
+                "Answer: Down-right"
+              ],
+              "answer": "Down-right"
+            }
+          },
+          "concept_explanation": "Identifying what a shape looks like after being rotated 90°, 180°, or 270° around a point.",
+          "topic_id": "patterns",
+          "common_mistakes": [
+            "Confusing rotation with reflection — rotation turns, reflection flips",
+            "Rotating in the wrong direction (clockwise vs anticlockwise)",
+            "Not tracking individual points or features through the rotation",
+            "Forgetting that 90° clockwise is the same as 270° anticlockwise"
+          ],
+          "related_topics": [
+            "Reflections & Symmetry",
+            "Shape / Figural Sequences",
+            "Visual Pattern Completion"
+          ]
+        },
+        {
+          "id": "SPATIAL-T02",
+          "title": "Reflections & Symmetry",
+          "identification_cues": [
+            "Which is the reflection of this shape?",
+            "How many lines of symmetry does this shape have?",
+            "Which figure is the mirror image?"
+          ],
+          "key_rules": [
+            "Vertical mirror: left↔right swap, top/bottom stay",
+            "Horizontal mirror: top↔bottom swap, left/right stay",
+            "Reflection reverses handedness — a clockwise spiral becomes anticlockwise",
+            "Lines of symmetry: circle=∞, square=4, rectangle=2, equilateral triangle=3, regular pentagon=5"
+          ],
+          "examples": [
+            {
+              "question": "The letter 'F' is reflected in a vertical mirror line. What does it look like?",
+              "options": [
+                "F (unchanged)",
+                "Backwards F (⌐)",
+                "Upside-down F",
+                "Rotated F"
+              ],
+              "solution_steps": [
+                "Vertical reflection swaps left and right",
+                "The horizontal lines of F now extend to the left instead of right",
+                "It looks like a backwards F"
+              ],
+              "answer": "Backwards F (⌐)",
+              "difficulty": 1
+            },
+            {
+              "question": "How many lines of symmetry does a regular hexagon have?",
+              "options": [
+                "3",
+                "4",
+                "6",
+                "12"
+              ],
+              "solution_steps": [
+                "Regular hexagon: 6 equal sides, 6 equal angles",
+                "Lines through opposite vertices: 3",
+                "Lines through midpoints of opposite sides: 3",
+                "Total = 6"
+              ],
+              "answer": "6",
+              "difficulty": 2
+            },
+            {
+              "question": "A shape is reflected in a horizontal line, then reflected in a vertical line. The result is the same as which single transformation?",
+              "options": [
+                "90° rotation",
+                "180° rotation",
+                "Translation",
+                "No change"
+              ],
+              "solution_steps": [
+                "Horizontal reflection: (x,y) → (x, −y)",
+                "Then vertical reflection: (x, −y) → (−x, −y)",
+                "Combined: (x,y) → (−x, −y) = 180° rotation"
+              ],
+              "answer": "180° rotation",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Reflections REVERSE left/right or top/bottom but NOT both (that's rotation)",
+              "explanation": "This is a common mistake that costs marks in exams. Make sure you understand the difference."
+            },
+            {
+              "tip": "Text and asymmetric features are the giveaway — look for reversed letters/numbers",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems.",
+              "example": "look for reversed letters/numbers"
+            },
+            {
+              "tip": "Two reflections in perpendicular lines = 180° rotation",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Use a ruler or pencil as the mirror line and imagine folding the paper"
+            ],
+            "worked_example": {
+              "question": "The letter 'F' is reflected in a vertical mirror line. What does it look like?",
+              "steps": [
+                "Use a ruler or pencil as the mirror line and imagine folding the paper → Vertical reflection swaps left and right",
+                "Answer: Backwards F (⌐)"
+              ],
+              "answer": "Backwards F (⌐)"
+            }
+          },
+          "concept_explanation": "Identifying mirror images of shapes across horizontal, vertical, or diagonal lines.",
+          "topic_id": "patterns",
+          "common_mistakes": [
+            "Confusing reflection with rotation — reflections flip, rotations turn",
+            "Not maintaining equal perpendicular distance from the mirror line for all points",
+            "Forgetting that reflected text reads backwards",
+            "Confusing vertical and horizontal mirror lines"
+          ],
+          "related_topics": [
+            "Shape Rotations",
+            "Shape / Figural Sequences",
+            "Visual Pattern Completion"
+          ]
+        },
+        {
+          "id": "SPATIAL-T03",
+          "title": "Paper Folding & Hole Punching",
+          "identification_cues": [
+            "A paper is folded and a hole is punched. What does it look like unfolded?",
+            "Which figure shows the result of folding along the dotted line?",
+            "Paper is folded twice then cut. How many holes?"
+          ],
+          "examples": [
+            {
+              "question": "A square paper is folded in half (left to right). A hole is punched in the centre of the folded paper. How many holes when unfolded?",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "solution_steps": [
+                "1 fold = 2 layers",
+                "1 punch through 2 layers = 2 holes",
+                "Holes are symmetric about the fold line (left-right mirror)"
+              ],
+              "answer": "2",
+              "difficulty": 1
+            },
+            {
+              "question": "A square paper is folded in half (top to bottom), then folded in half again (left to right). A hole is punched in the top-right corner. How many holes when fully unfolded?",
+              "options": [
+                "2",
+                "3",
+                "4",
+                "8"
+              ],
+              "solution_steps": [
+                "2 folds = 4 layers",
+                "1 punch through 4 layers = 4 holes",
+                "Unfold left-right: hole mirrors to top-left",
+                "Unfold top-bottom: both holes mirror to bottom",
+                "4 holes, one in each corner area"
+              ],
+              "answer": "4",
+              "difficulty": 2
+            },
+            {
+              "question": "A square paper is folded diagonally (bottom-left to top-right), then a semicircle is cut from the folded edge. What shape appears when unfolded?",
+              "options": [
+                "Semicircle",
+                "Full circle",
+                "Oval",
+                "Two semicircles"
+              ],
+              "solution_steps": [
+                "Diagonal fold = 2 layers",
+                "Cut on the fold edge goes through both layers",
+                "When unfolded, the two semicircles join to form a full circle"
+              ],
+              "answer": "Full circle",
+              "difficulty": 2
+            },
+            {
+              "question": "Paper is folded in half 3 times, then a single hole is punched. How many holes appear when fully unfolded?",
+              "options": [
+                "3",
+                "4",
+                "6",
+                "8"
+              ],
+              "solution_steps": [
+                "Each fold doubles the layers: 1→2→4→8",
+                "1 punch through 8 layers = 8 holes"
+              ],
+              "answer": "8",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Rule: n folds = 2ⁿ layers = 2ⁿ holes per punch",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "Always track the fold direction — it determines where the mirror copies appear",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems.",
+              "example": "it determines where the mirror copies appear"
+            },
+            {
+              "tip": "For cuts on the fold edge: the cut mirrors perfectly along the fold",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "Practice with actual paper — fold, punch, unfold to build intuition",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems.",
+              "example": "fold, punch, unfold to build intuition"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Trace the fold line and imagine flipping one half onto the other",
+              "Holes punched go through ALL layers — count the layers at each point",
+              "Unfold step by step in reverse order",
+              "Symmetry: each fold creates a mirror line"
+            ],
+            "worked_example": {
+              "question": "A square paper is folded in half (left to right). A hole is punched in the centre of the folded paper. How many holes when unfolded?",
+              "steps": [
+                "Trace the fold line and imagine flipping one half onto the other → 1 fold = 2 layers",
+                "Holes punched go through ALL layers — count the layers at each point → 1 punch through 2 layers = 2 holes",
+                "Unfold step by step in reverse order → Holes are symmetric about the fold line (left-right mirror)",
+                "Symmetry: each fold creates a mirror line"
+              ],
+              "answer": "2"
+            }
+          },
+          "concept_explanation": "Predicting what a folded paper looks like when unfolded, or where holes appear after punching through folded paper.",
+          "topic_id": "patterns",
+          "common_mistakes": [
+            "Not reflecting the hole/cut across EACH fold line in the correct order (unfold in reverse)",
+            "Losing track of which corner is which after multiple folds",
+            "Forgetting that the number of holes doubles with each fold (one fold = 2 holes, two folds = 4)",
+            "Incorrectly reflecting — the hole position mirrors across the fold line, not across the page"
+          ],
+          "related_topics": [
+            "Reflections & Symmetry",
+            "3D Nets & Visualization",
+            "Visual Pattern Completion"
+          ]
+        },
+        {
+          "id": "SPATIAL-T04",
+          "title": "Visual Pattern Completion",
+          "identification_cues": [
+            "Which completes the pattern?",
+            "What comes next in this visual sequence?",
+            "Which replaces the question mark?"
+          ],
+          "examples": [
+            {
+              "question": "In a 3×3 grid, each row shows a circle with 1, 2, 3 dots. Each column shows the circle in white, grey, black. The bottom-right cell is missing. What is it?",
+              "options": [
+                "Black circle, 3 dots",
+                "White circle, 3 dots",
+                "Black circle, 1 dot",
+                "Grey circle, 2 dots"
+              ],
+              "solution_steps": [
+                "Row 3 pattern: 1 dot, 2 dots, ? dots → 3 dots",
+                "Column 3 pattern: white, grey, ? → black",
+                "Missing: black circle with 3 dots"
+              ],
+              "answer": "Black circle, 3 dots",
+              "difficulty": 1
+            },
+            {
+              "question": "A sequence shows: △, □, ○, △, □, ○, △, □, ? What comes next?",
+              "options": [
+                "△",
+                "□",
+                "○",
+                "⬠"
+              ],
+              "solution_steps": [
+                "Pattern repeats every 3: △, □, ○",
+                "Position 9 = 3rd in cycle = ○"
+              ],
+              "answer": "○",
+              "difficulty": 1
+            },
+            {
+              "question": "In a 3×3 grid, each row has shapes that rotate 45° clockwise, and shading alternates. Row 3 has: dark arrow pointing NE, light arrow pointing E, ?. What fills the cell?",
+              "options": [
+                "Dark arrow pointing SE",
+                "Light arrow pointing SE",
+                "Dark arrow pointing S",
+                "Light arrow pointing S"
+              ],
+              "solution_steps": [
+                "Rotation: NE → E (+45°) → SE (+45°)",
+                "Shading: dark, light, dark (alternating)",
+                "Missing: dark arrow pointing SE"
+              ],
+              "answer": "Dark arrow pointing SE",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Common rules: rotation, count change, shading cycle, size change, element addition/removal",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "Some patterns combine two rules (e.g., rotate + change shading)",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems.",
+              "example": "rotate + change shading)"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "ALWAYS check rows AND columns — the pattern must work in both directions",
+              "If you can't see the pattern in rows, try columns or diagonals"
+            ],
+            "worked_example": {
+              "question": "In a 3×3 grid, each row shows a circle with 1, 2, 3 dots. Each column shows the circle in white, grey, black. The bottom-right cell is missing. What is it?",
+              "steps": [
+                "ALWAYS check rows AND columns — the pattern must work in both directions → Row 3 pattern: 1 dot, 2 dots, ? dots → 3 dots",
+                "If you can't see the pattern in rows, try columns or diagonals → Column 3 pattern: white, grey, ? → black",
+                "Answer: Black circle, 3 dots"
+              ],
+              "answer": "Black circle, 3 dots"
+            }
+          },
+          "concept_explanation": "Finding the missing piece in a visual pattern grid (typically 3×3 with one cell missing).",
+          "topic_id": "patterns.grid",
+          "common_mistakes": [
+            "Only checking rows OR columns — you must verify the pattern works in both directions",
+            "Overlooking subtle differences between similar-looking options",
+            "Assuming the same type of pattern applies to all elements within each figure",
+            "Not checking your answer against all rows and columns before selecting"
+          ],
+          "related_topics": [
+            "Shape / Figural Sequences",
+            "Shape Rotations",
+            "Reflections & Symmetry"
+          ]
+        },
+        {
+          "id": "SPATIAL-T05",
+          "title": "3D Nets & Visualization",
+          "identification_cues": [
+            "Which net folds into this cube?",
+            "What 3D shape does this net make?",
+            "Which face is opposite the shaded face?"
+          ],
+          "examples": [
+            {
+              "question": "A cross-shaped net of 6 squares folds into a cube. The centre square is the base. Which square becomes the top?",
+              "options": [
+                "The one directly above centre",
+                "The one directly below centre",
+                "The one 2 squares above centre",
+                "The one to the right"
+              ],
+              "solution_steps": [
+                "In a cross net: centre = base",
+                "The square directly opposite (2 squares up from centre, past the fold) becomes the top",
+                "The one directly above centre becomes a side face"
+              ],
+              "answer": "The one 2 squares above centre",
+              "difficulty": 2
+            },
+            {
+              "question": "A cube has faces numbered 1-6. In the net: 1 is in the centre. 2 is above, 3 right, 4 below, 5 left, 6 is above 2. What number is opposite 1?",
+              "options": [
+                "2",
+                "4",
+                "5",
+                "6"
+              ],
+              "solution_steps": [
+                "1 is the base (centre of cross)",
+                "6 is two squares up from 1",
+                "When folded, 6 lands on top (opposite 1)",
+                "2,3,4,5 are all side faces"
+              ],
+              "answer": "6",
+              "difficulty": 2
+            },
+            {
+              "question": "Which of these CANNOT be a net of a cube? A) Cross shape (6 squares) B) T-shape (6 squares) C) L-shape with 4 in a row + 2 on one side D) 2×3 rectangle of squares",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "solution_steps": [
+                "A (cross) ✓ — valid cube net",
+                "B (T-shape) ✓ — valid",
+                "C (L with extras) ✓ — valid",
+                "D (2×3 rectangle) ✗ — when folded, two faces overlap"
+              ],
+              "answer": "D",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "There are exactly 11 different nets for a cube — worth recognising the common ones",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems.",
+              "example": "worth recognising the common ones"
+            },
+            {
+              "tip": "Quick check: any net with 4+ squares in a straight line is suspicious (only works if extras are spaced right)",
+              "explanation": "A quick verification step catches careless errors and can save marks."
+            },
+            {
+              "tip": "Opposite face rule: in a cross net, the face 2 steps away (skipping one) is opposite",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "For non-cube nets: count faces and match to the 3D shape first",
+              "explanation": "Getting this step right early prevents cascading errors through the rest of the solution."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Mentally rotate or trace the shape step by step",
+              "Use elimination — rule out impossible options first",
+              "For rotations: track one distinctive feature (corner, dot, mark)",
+              "For reflections: every point flips equal distance across the mirror line"
+            ],
+            "worked_example": {
+              "question": "A cross-shaped net of 6 squares folds into a cube. The centre square is the base. Which square becomes the top?",
+              "steps": [
+                "Mentally rotate or trace the shape step by step → In a cross net: centre = base",
+                "Use elimination — rule out impossible options first → The square directly opposite (2 squares up from centre, past the fold) becomes the top",
+                "For rotations: track one distinctive feature (corner, dot, mark) → The one directly above centre becomes a side face",
+                "For reflections: every point flips equal distance across the mirror line",
+                "Answer: The one 2 squares above centre"
+              ],
+              "answer": "The one 2 squares above centre"
+            }
+          },
+          "concept_explanation": "Identifying which 3D shape a flat net folds into, or which net folds into a given 3D shape.",
+          "topic_id": "patterns.grid",
+          "common_mistakes": [
+            "Not correctly identifying opposite faces on a cube net — opposite faces never share an edge",
+            "Forgetting that patterns on faces rotate when the net is folded",
+            "Not mentally folding systematically — track one face at a time",
+            "Confusing valid cube nets with invalid ones (there are exactly 11 valid cube nets)"
+          ],
+          "related_topics": [
+            "Paper Folding & Hole Punching",
+            "Visual Pattern Completion",
+            "Shape Rotations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAT03",
+      "category": "Algebra & Equations",
+      "topics": [
+        {
+          "id": "CAT03-T01",
+          "title": "Solving for Unknowns",
+          "identification_cues": [
+            "A letter (x, n, p, □) represents an unknown",
+            "An equals sign is present",
+            "Asked for: 'find x', 'what is the value of…', 'solve for…'"
+          ],
+          "technique_examples": [
+            {
+              "type": "Single step",
+              "example": "3x = 21 → x = 7"
+            },
+            {
+              "type": "Two steps",
+              "example": "2x + 5 = 17 → 2x = 12 → x = 6"
+            },
+            {
+              "type": "With brackets",
+              "example": "3(x + 4) = 27 → 3x + 12 = 27 → x = 5"
+            },
+            {
+              "type": "With fractions",
+              "example": "x/4 = 9 → x = 36"
+            }
+          ],
+          "examples": [
+            {
+              "question": "If 5(2x − 3) = 45, what is x?",
+              "solution_steps": [
+                "Expand: 10x − 15 = 45",
+                "Add 15: 10x = 60",
+                "Divide: x = 6"
+              ],
+              "answer": "x = 6",
+              "check": "5(12−3) = 5×9 = 45 ✓",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "On multiple choice: sometimes faster to try each answer option (back-solving)",
+              "explanation": "This shortcut saves valuable time in timed exams while maintaining accuracy."
+            },
+            {
+              "tip": "Whatever you do to one side, do to both sides",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Always check your answer by substituting back in"
+            ],
+            "worked_example": {
+              "question": "If 5(2x − 3) = 45, what is x?",
+              "steps": [
+                "Always check your answer by substituting back in → Expand: 10x − 15 = 45",
+                "Answer: x = 6"
+              ],
+              "answer": "x = 6"
+            }
+          },
+          "golden_rules": [
+            "Do the same to both sides — always."
+          ],
+          "concept_explanation": "A mathematical sentence with a missing value represented by a letter.",
+          "topic_id": "word-problems",
+          "common_mistakes": [
+            "Not performing the same operation on both sides of an equation",
+            "Misreading the relationship between symbols or shapes",
+            "Forgetting to check the solution by substituting back",
+            "Making arithmetic errors when working backwards through multiple steps"
+          ],
+          "related_topics": [
+            "Word Problems with Variables",
+            "Substitution Problems",
+            "Arithmetic with Integers"
+          ]
+        },
+        {
+          "id": "CAT03-T02",
+          "title": "Word Problems with Variables",
+          "identification_cues": [
+            "A situation described in words with an unknown quantity",
+            "You must express relationships mathematically"
+          ],
+          "word_to_maths_translations": [
+            {
+              "words": "more than",
+              "maths": "+"
+            },
+            {
+              "words": "less than / fewer",
+              "maths": "−"
+            },
+            {
+              "words": "times as many",
+              "maths": "×"
+            },
+            {
+              "words": "is / equals",
+              "maths": "="
+            },
+            {
+              "words": "divided equally among N",
+              "maths": "÷ N"
+            },
+            {
+              "words": "consecutive integers",
+              "maths": "x, x+1, x+2"
+            },
+            {
+              "words": "consecutive even/odd integers",
+              "maths": "x, x+2, x+4"
+            }
+          ],
+          "examples": [
+            {
+              "question": "Tom is 3 times as old as Sam. In 6 years, Tom will be twice as old as Sam. How old is Sam now?",
+              "solution_steps": [
+                "Let Sam = x → Tom = 3x",
+                "In 6 years: Sam = x+6, Tom = 3x+6",
+                "Condition: 3x+6 = 2(x+6) → 3x+6 = 2x+12 → x = 6"
+              ],
+              "answer": "Sam is 6 years old",
+              "check": "Tom=18, in 6 years Sam=12, Tom=24=2×12 ✓",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Draw a diagram or table for age, distance, or sharing problems",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "Always define what x represents at the start",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems."
+            },
+            {
+              "tip": "'5 less than x' is x−5, NOT 5−x",
+              "explanation": "This is a common mistake that costs marks in exams. Make sure you understand the difference."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Read the question twice — underline what's given and what's asked",
+              "Choose the most efficient method (mental, written, or estimation)",
+              "Show your working step by step",
+              "Check your answer against the original question"
+            ],
+            "worked_example": {
+              "question": "Tom is 3 times as old as Sam. In 6 years, Tom will be twice as old as Sam. How old is Sam now?",
+              "steps": [
+                "Read the question twice — underline what's given and what's asked → Let Sam = x → Tom = 3x",
+                "Choose the most efficient method (mental, written, or estimation) → In 6 years: Sam = x+6, Tom = 3x+6",
+                "Show your working step by step → Condition: 3x+6 = 2(x+6) → 3x+6 = 2x+12 → x = 6",
+                "Check your answer against the original question → Verify: Sam is 6 years old ✓"
+              ],
+              "answer": "Sam is 6 years old"
+            }
+          },
+          "concept_explanation": "A real-world scenario that requires setting up and solving an equation.",
+          "topic_id": "word-problems",
+          "common_mistakes": [
+            "Misinterpreting 'more than' and 'less than' — '5 more than x' is x + 5, not 5 − x",
+            "Setting up the wrong equation by misreading the relationships described",
+            "Forgetting to answer the actual question — solving for x when the question asks for 2x + 3",
+            "Not checking units — make sure the answer matches what was asked (metres, dollars, etc.)"
+          ],
+          "related_topics": [
+            "Solving for Unknowns",
+            "Substitution Problems",
+            "Speed, Distance & Time (Kinematics)"
+          ]
+        },
+        {
+          "id": "CAT03-T03",
+          "title": "Substitution Problems",
+          "identification_cues": [
+            "A symbol, letter-formula, or defined operation is given",
+            "You are given specific values to substitute"
+          ],
+          "examples": [
+            {
+              "question": "An operation is defined: a★b = 2a² − 3b. Find 4★5.",
+              "solution_steps": [
+                "Substitute a=4, b=5: 2(4²) − 3(5)",
+                "= 2(16) − 15",
+                "= 32 − 15 = 17"
+              ],
+              "answer": "17",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Write out the substitution explicitly before computing",
+              "explanation": "Getting this step right early prevents cascading errors through the rest of the solution."
+            },
+            {
+              "tip": "Watch the order: in '4★5', confirm which number is a and which is b",
+              "explanation": "This is a frequently tested trap in exams. Being aware of it gives you an advantage."
+            },
+            {
+              "tip": "Always re-read the definition as you work",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Read the question twice — underline what's given and what's asked",
+              "Choose the most efficient method (mental, written, or estimation)",
+              "Show your working step by step",
+              "Check your answer against the original question"
+            ],
+            "worked_example": {
+              "question": "An operation is defined: a★b = 2a² − 3b. Find 4★5.",
+              "steps": [
+                "Read the question twice — underline what's given and what's asked → Substitute a=4, b=5: 2(4²) − 3(5)",
+                "Choose the most efficient method (mental, written, or estimation) → = 2(16) − 15",
+                "Show your working step by step → = 32 − 15 = 17",
+                "Check your answer against the original question → Verify: 17 ✓"
+              ],
+              "answer": "17"
+            }
+          },
+          "concept_explanation": "A formula or expression is given, and you plug in specific values.",
+          "topic_id": "word-problems",
+          "common_mistakes": [
+            "Substituting values incorrectly — especially with negative numbers in brackets",
+            "Not following order of operations after substitution",
+            "Confusing which symbol or variable gets which value",
+            "Forgetting to square or cube negative values correctly: (−2)² = 4, not −4"
+          ],
+          "related_topics": [
+            "Solving for Unknowns",
+            "Word Problems with Variables",
+            "Powers, Roots & Order of Operations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAT04",
+      "category": "Rates, Ratios & Proportional Reasoning",
+      "topics": [
+        {
+          "id": "CAT04-T01",
+          "title": "Speed, Distance & Time (Kinematics)",
+          "curriculum_level": "Year 8-9",
+          "description": "Problems involving objects in motion — finding speed, distance, or time. Aligned with VIC curriculum for selective entry.",
+          "concept_explanation": "Kinematics is the study of motion without considering forces. In the VIC Selective Entry Exam, you need to solve problems about speed, distance and time — including average speed, relative motion, and multi-leg journeys. These appear as word problems in the Quantitative Reasoning section.",
+          "definitions": {
+            "speed": "How fast something moves — distance covered per unit of time (scalar, no direction)",
+            "velocity": "Speed with direction (e.g. 60 km/h north) — rarely tested in selective entry but good to know",
+            "distance": "Total path length travelled (always positive)",
+            "displacement": "Straight-line distance from start to finish (can be zero if you return to start)",
+            "average_speed": "Total distance ÷ Total time for the whole journey",
+            "relative_speed": "How fast two objects approach or separate from each other"
+          },
+          "key_formulas": [
+            "Distance = Speed × Time   (D = S × T)",
+            "Speed = Distance ÷ Time   (S = D / T)",
+            "Time = Distance ÷ Speed   (T = D / S)",
+            "Average Speed = Total Distance ÷ Total Time",
+            "km/h → m/s: multiply by 5/18 (or ÷ 3.6)",
+            "m/s → km/h: multiply by 18/5 (or × 3.6)",
+            "Average speed = Total Distance ÷ Total Time. NEVER average the two speeds! This is the most common mistake in selective entry exams."
+          ],
+          "magic_triangle": {
+            "description": "D = S × T — cover the variable you want to find. Write D on top, S and T on the bottom.",
+            "formulas": [
+              "D = S × T  (multiply bottom two)",
+              "S = D ÷ T  (divide top by bottom-right)",
+              "T = D ÷ S  (divide top by bottom-left)"
+            ]
+          },
+          "solving_strategy": {
+            "steps": [
+              "Read the problem and identify what's given (S, D, or T) and what's asked",
+              "Convert all units to match (e.g. minutes → hours, m/s → km/h)",
+              "Use D = S × T or its rearrangements",
+              "For multi-leg journeys: calculate each leg separately, then combine",
+              "Check: does your answer make sense? (speed can't be negative, time should be reasonable)"
+            ],
+            "worked_example": {
+              "question": "A car travels 240 km in 3 hours. What is its speed?",
+              "steps": [
+                "Read the problem and identify what's given (S, D, or T) and what's asked → Speed = Distance ÷ Time",
+                "Convert all units to match (e.g. minutes → hours, m/s → km/h) → S = 240 ÷ 3 = 80 km/h",
+                "Use D = S × T or its rearrangements",
+                "For multi-leg journeys: calculate each leg separately, then combine",
+                "Check: does your answer make sense? (speed can't be negative, time should be reasonable) → Verify: 80 km/h ✓"
+              ],
+              "answer": "80 km/h"
+            }
+          },
+          "identification_cues": [
+            "Key words: speed, velocity, rate, distance, travelled, how long, arrive, departed",
+            "Involves km/h, m/s, minutes, hours",
+            "Mentions vehicles, walking, running, trains, cyclists",
+            "Two objects moving toward or away from each other"
+          ],
+          "unit_conversions": [
+            "1 hour = 60 minutes = 3600 seconds",
+            "1 km = 1000 m",
+            "km/h to m/s: × 5/18  (e.g. 72 km/h = 72 × 5/18 = 20 m/s)",
+            "m/s to km/h: × 18/5  (e.g. 15 m/s = 15 × 18/5 = 54 km/h)",
+            "Shortcut: km/h ÷ 3.6 = m/s"
+          ],
+          "problem_types": [
+            {
+              "type": "Single Journey",
+              "description": "Given two of S, D, T — find the third using D = S × T"
+            },
+            {
+              "type": "Multi Leg Journey",
+              "description": "Multiple segments at different speeds → find total time or average speed"
+            },
+            {
+              "type": "Meeting Problems",
+              "description": "Two objects move toward each other → combined speed = sum of speeds"
+            },
+            {
+              "type": "Chasing Problems",
+              "description": "One object chases another → relative speed = difference of speeds"
+            },
+            {
+              "type": "Round Trip",
+              "description": "Same distance at two different speeds → average speed ≠ arithmetic mean"
+            },
+            {
+              "type": "Head Start",
+              "description": "One object leaves earlier → calculate head start distance, then apply relative speed"
+            }
+          ],
+          "common_mistakes": [
+            "Averaging speeds instead of using Total Distance ÷ Total Time",
+            "Forgetting to convert units (mixing km/h and m/s, or minutes and hours)",
+            "Using speed = distance × time instead of distance ÷ time",
+            "Forgetting that 90 minutes = 1.5 hours, not 1.9 hours",
+            "In meeting problems: forgetting to add the speeds",
+            "Assuming average speed = (speed1 + speed2) ÷ 2 for unequal distances"
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Always convert units first",
+              "explanation": "Mixing km/h with minutes or m/s with km causes wrong answers. Convert everything to the same system before calculating.",
+              "example": "A car goes 90 km/h for 20 minutes → Convert 20 min = 20/60 = 1/3 hour → D = 90 × 1/3 = 30 km"
+            },
+            {
+              "tip": "Meeting problems: ADD the speeds",
+              "explanation": "When two objects move TOWARD each other, the gap closes at the sum of their speeds.",
+              "example": "Train A at 80 km/h and Train B at 70 km/h approach each other → gap closes at 80 + 70 = 150 km/h"
+            },
+            {
+              "tip": "Chasing problems: SUBTRACT the speeds",
+              "explanation": "When one object chases another in the SAME direction, the gap closes at the difference of their speeds.",
+              "example": "Car at 100 km/h chases bus at 60 km/h → gap closes at 100 − 60 = 40 km/h"
+            },
+            {
+              "tip": "Average speed is NOT the average of speeds",
+              "explanation": "Average speed = Total Distance ÷ Total Time. The arithmetic mean (adding and dividing by 2) only works if the TIME spent at each speed is equal, which is rarely the case.",
+              "example": "60 km at 30 km/h then 60 km at 60 km/h → Times: 2h + 1h = 3h → Avg = 120/3 = 40 km/h (NOT 45)"
+            },
+            {
+              "tip": "Round trip shortcut: harmonic mean",
+              "explanation": "For a round trip (same distance, two different speeds), average speed = 2 × s₁ × s₂ ÷ (s₁ + s₂). This is always less than the arithmetic mean.",
+              "example": "Go at 40 km/h, return at 60 km/h → Avg = 2×40×60 ÷ (40+60) = 4800/100 = 48 km/h"
+            },
+            {
+              "tip": "60 km/h = 1 km per minute",
+              "explanation": "This mental shortcut is very useful for quick estimation. Similarly, 120 km/h = 2 km/min, 30 km/h = 0.5 km/min.",
+              "example": "At 60 km/h, how far in 25 minutes? → 25 × 1 = 25 km (instant answer)"
+            },
+            {
+              "tip": "Convert minutes to hours by dividing by 60",
+              "explanation": "Common time conversions: 15 min = 0.25 h, 20 min = 1/3 h, 30 min = 0.5 h, 45 min = 0.75 h, 90 min = 1.5 h.",
+              "example": "A journey takes 2 hours 15 minutes = 2.25 hours (not 2.15!)"
+            },
+            {
+              "tip": "Draw a timeline or diagram",
+              "explanation": "For complex problems with multiple objects, departures at different times, or objects passing each other, sketch a simple diagram showing positions and times.",
+              "example": "Bus leaves at 9:00, car at 9:30 → draw a line showing the bus ahead, mark the gap, show the car catching up"
+            },
+            {
+              "tip": "Check your answer with common sense",
+              "explanation": "Average speed must be between the slowest and fastest speeds. Time cant be negative. If a car goes 60 km/h for 2 hours, it better be 120 km — not 30.",
+              "example": "If you get average speed = 95 km/h from speeds of 60 and 80, something is wrong (must be between 60 and 80)"
+            },
+            {
+              "tip": "For km/h to m/s: divide by 3.6 (or × 5/18)",
+              "explanation": "1 km = 1000 m, 1 hour = 3600 seconds. So km/h × 1000/3600 = km/h × 5/18 ≈ km/h ÷ 3.6.",
+              "example": "72 km/h = 72 ÷ 3.6 = 20 m/s. Reverse: 25 m/s = 25 × 3.6 = 90 km/h"
+            }
+          ],
+          "golden_rules": [
+            "D = S × T — always start here",
+            "Average speed = Total Distance ÷ Total Time (never average the speeds)",
+            "Convert ALL units to the same system before calculating"
+          ],
+          "examples": [
+            {
+              "question": "A car travels 240 km in 3 hours. What is its speed?",
+              "solution_steps": [
+                "Speed = Distance ÷ Time",
+                "S = 240 ÷ 3 = 80 km/h"
+              ],
+              "answer": "80 km/h",
+              "difficulty": 1
+            },
+            {
+              "question": "A bus travels at 50 km/h for 4 hours. How far does it go?",
+              "solution_steps": [
+                "Distance = Speed × Time",
+                "D = 50 × 4 = 200 km"
+              ],
+              "answer": "200 km",
+              "difficulty": 1
+            },
+            {
+              "question": "How long does it take to travel 150 km at 60 km/h?",
+              "solution_steps": [
+                "Time = Distance ÷ Speed",
+                "T = 150 ÷ 60 = 2.5 hours"
+              ],
+              "answer": "2.5 hours",
+              "difficulty": 1
+            },
+            {
+              "question": "Convert 108 km/h to m/s.",
+              "solution_steps": [
+                "Multiply by 5/18 (or divide by 3.6)",
+                "108 × 5/18 = 540/18 = 30 m/s"
+              ],
+              "answer": "30 m/s",
+              "difficulty": 1
+            },
+            {
+              "question": "A runner covers 200 m in 25 seconds. What is her speed in km/h?",
+              "solution_steps": [
+                "Speed in m/s = 200 ÷ 25 = 8 m/s",
+                "Convert to km/h: 8 × 3.6 = 28.8 km/h"
+              ],
+              "answer": "28.8 km/h",
+              "difficulty": 1
+            },
+            {
+              "question": "A train travels 180 km at 90 km/h, then 120 km at 60 km/h. What is its average speed?",
+              "solution_steps": [
+                "Time for leg 1: T₁ = 180 ÷ 90 = 2 hours",
+                "Time for leg 2: T₂ = 120 ÷ 60 = 2 hours",
+                "Total distance = 180 + 120 = 300 km",
+                "Total time = 2 + 2 = 4 hours",
+                "Average speed = 300 ÷ 4 = 75 km/h"
+              ],
+              "answer": "75 km/h",
+              "difficulty": 2
+            },
+            {
+              "question": "A cyclist rides to school (6 km) at 15 km/h and returns at 10 km/h. What is the average speed for the round trip?",
+              "solution_steps": [
+                "Total distance = 6 + 6 = 12 km",
+                "Time going: 6 ÷ 15 = 0.4 hours",
+                "Time returning: 6 ÷ 10 = 0.6 hours",
+                "Total time = 0.4 + 0.6 = 1 hour",
+                "Average speed = 12 ÷ 1 = 12 km/h",
+                "Note: NOT (15 + 10) ÷ 2 = 12.5"
+              ],
+              "answer": "12 km/h",
+              "difficulty": 2
+            },
+            {
+              "question": "Two trains are 450 km apart and travel toward each other at 80 km/h and 70 km/h. When do they meet?",
+              "solution_steps": [
+                "Moving toward each other → add speeds",
+                "Combined speed = 80 + 70 = 150 km/h",
+                "Time = Distance ÷ Combined speed",
+                "Time = 450 ÷ 150 = 3 hours"
+              ],
+              "answer": "3 hours",
+              "difficulty": 2
+            },
+            {
+              "question": "A car travels at 80 km/h for 45 minutes, then at 100 km/h for 30 minutes. What is the total distance?",
+              "solution_steps": [
+                "Convert to hours: 45 min = 0.75 h, 30 min = 0.5 h",
+                "Distance 1: 80 × 0.75 = 60 km",
+                "Distance 2: 100 × 0.5 = 50 km",
+                "Total distance = 60 + 50 = 110 km"
+              ],
+              "answer": "110 km",
+              "difficulty": 2
+            },
+            {
+              "question": "A person walks at 5 km/h for 2 hours, then cycles at 20 km/h for 1.5 hours. What is the average speed?",
+              "solution_steps": [
+                "Distance walking: 5 × 2 = 10 km",
+                "Distance cycling: 20 × 1.5 = 30 km",
+                "Total distance = 10 + 30 = 40 km",
+                "Total time = 2 + 1.5 = 3.5 hours",
+                "Average speed = 40 ÷ 3.5 ≈ 11.4 km/h"
+              ],
+              "answer": "11.4 km/h",
+              "difficulty": 2
+            },
+            {
+              "question": "A train 200 m long passes a pole in 10 seconds. What is its speed in km/h?",
+              "solution_steps": [
+                "Distance = length of train = 200 m",
+                "Time = 10 seconds",
+                "Speed = 200 ÷ 10 = 20 m/s",
+                "Convert: 20 × 3.6 = 72 km/h"
+              ],
+              "answer": "72 km/h",
+              "difficulty": 2
+            },
+            {
+              "question": "Two cities are 360 km apart. A car leaves City A at 8:00 AM at 60 km/h. At what time does it arrive at City B?",
+              "solution_steps": [
+                "Time = Distance ÷ Speed",
+                "Time = 360 ÷ 60 = 6 hours",
+                "Departure: 8:00 AM + 6 hours = 2:00 PM"
+              ],
+              "answer": "2:00 PM",
+              "difficulty": 2
+            },
+            {
+              "question": "A bus leaves Town A at 9:00 AM at 60 km/h. A car leaves the same town at 9:30 AM at 80 km/h. At what time does the car catch the bus?",
+              "solution_steps": [
+                "Bus head start = 30 min = 0.5 hours",
+                "Bus distance in head start = 60 × 0.5 = 30 km",
+                "Relative speed (car gaining) = 80 − 60 = 20 km/h",
+                "Time to close 30 km gap = 30 ÷ 20 = 1.5 hours",
+                "Car left at 9:30 AM + 1.5 hours = 11:00 AM"
+              ],
+              "answer": "11:00 AM",
+              "difficulty": 3
+            },
+            {
+              "question": "A boat travels 24 km upstream at 8 km/h and returns downstream at 12 km/h. What is the average speed?",
+              "solution_steps": [
+                "Time upstream: 24 ÷ 8 = 3 hours",
+                "Time downstream: 24 ÷ 12 = 2 hours",
+                "Total distance = 48 km, Total time = 5 hours",
+                "Average speed = 48 ÷ 5 = 9.6 km/h",
+                "Shortcut: harmonic mean = 2×8×12 ÷ (8+12) = 192/20 = 9.6"
+              ],
+              "answer": "9.6 km/h",
+              "difficulty": 3
+            },
+            {
+              "question": "A train 300 m long passes a platform 500 m long in 40 seconds. What is the speed of the train in km/h?",
+              "solution_steps": [
+                "Total distance = train + platform = 300 + 500 = 800 m",
+                "Time = 40 seconds",
+                "Speed = 800 ÷ 40 = 20 m/s",
+                "Convert: 20 × 3.6 = 72 km/h"
+              ],
+              "answer": "72 km/h",
+              "difficulty": 3
+            },
+            {
+              "question": "Two trains, each 150 m long, approach each other at 60 km/h and 90 km/h. How long does it take them to completely pass each other?",
+              "solution_steps": [
+                "Total distance = 150 + 150 = 300 m",
+                "Combined speed = 60 + 90 = 150 km/h",
+                "Convert speed: 150 × 5/18 = 125/3 ≈ 41.67 m/s",
+                "Time = 300 ÷ 41.67 ≈ 7.2 seconds"
+              ],
+              "answer": "7.2 seconds",
+              "difficulty": 3
+            },
+            {
+              "question": "A man walks from home to office at 4 km/h and is 10 minutes late. If he walks at 6 km/h, he is 10 minutes early. What is the distance?",
+              "solution_steps": [
+                "Let distance = d km",
+                "Time at 4 km/h: d/4 hours",
+                "Time at 6 km/h: d/6 hours",
+                "Difference = 20 minutes = 1/3 hour",
+                "d/4 − d/6 = 1/3",
+                "3d/12 − 2d/12 = 1/3",
+                "d/12 = 1/3",
+                "d = 4 km"
+              ],
+              "answer": "4 km",
+              "difficulty": 3
+            },
+            {
+              "question": "A car covers the first half of a journey at 40 km/h and the second half at 60 km/h. What is the average speed?",
+              "solution_steps": [
+                "Let total distance = 2d",
+                "Time for first half: d/40",
+                "Time for second half: d/60",
+                "Total time = d/40 + d/60 = 3d/120 + 2d/120 = 5d/120 = d/24",
+                "Average speed = 2d ÷ (d/24) = 2d × 24/d = 48 km/h",
+                "Or use harmonic mean: 2×40×60 ÷ (40+60) = 4800/100 = 48"
+              ],
+              "answer": "48 km/h",
+              "difficulty": 3
+            },
+            {
+              "question": "A and B start at the same point. A walks north at 3 km/h, B walks east at 4 km/h. How far apart are they after 2 hours?",
+              "solution_steps": [
+                "A travels north: 3 × 2 = 6 km",
+                "B travels east: 4 × 2 = 8 km",
+                "They form a right angle — use Pythagoras",
+                "Distance² = 6² + 8² = 36 + 64 = 100",
+                "Distance = √100 = 10 km"
+              ],
+              "answer": "10 km",
+              "difficulty": 3
+            },
+            {
+              "question": "A train passes a man walking at 6 km/h in the same direction in 10 seconds. The train is 125 m long. What is the train speed?",
+              "solution_steps": [
+                "Relative speed = train speed − man speed (same direction)",
+                "Distance = 125 m, Time = 10 s",
+                "Relative speed = 125/10 = 12.5 m/s = 12.5 × 3.6 = 45 km/h",
+                "Train speed = relative speed + man speed",
+                "Train speed = 45 + 6 = 51 km/h"
+              ],
+              "answer": "51 km/h",
+              "difficulty": 3
+            },
+            {
+              "question": "Two runners start a race. Runner A runs at 8 m/s, Runner B at 6 m/s. A gives B a 40 m head start. After how many seconds does A catch B?",
+              "solution_steps": [
+                "Relative speed = 8 − 6 = 2 m/s",
+                "Gap to close = 40 m",
+                "Time = Gap ÷ Relative speed",
+                "Time = 40 ÷ 2 = 20 seconds"
+              ],
+              "answer": "20 seconds",
+              "difficulty": 3
+            },
+            {
+              "question": "A boat goes 30 km upstream and 44 km downstream in 10 hours. It also goes 40 km upstream and 55 km downstream in 13 hours. Find the speed of the boat in still water and the speed of the stream.",
+              "solution_steps": [
+                "Let boat speed = b, stream speed = s",
+                "Upstream speed = b − s, Downstream speed = b + s",
+                "Equation 1: 30/(b−s) + 44/(b+s) = 10",
+                "Equation 2: 40/(b−s) + 55/(b+s) = 13",
+                "Let 1/(b−s) = x, 1/(b+s) = y",
+                "30x + 44y = 10  ... (i)",
+                "40x + 55y = 13  ... (ii)",
+                "Solving: x = 1/5, y = 1/11",
+                "b − s = 5, b + s = 11",
+                "b = 8 km/h, s = 3 km/h"
+              ],
+              "answer": "Boat: 8 km/h, Stream: 3 km/h",
+              "difficulty": 3
+            },
+            {
+              "question": "Three cars A, B, C start from the same point. A goes north at 40 km/h, B goes east at 30 km/h, and C goes south at 20 km/h. After 1 hour, how far is A from C? And what is the distance of B from the midpoint of A and C?",
+              "solution_steps": [
+                "After 1 hour: A is 40 km north, B is 30 km east, C is 20 km south",
+                "A to C: they go in opposite directions (north and south)",
+                "Distance A to C = 40 + 20 = 60 km",
+                "Midpoint of A and C is at (40−20)/2 = 10 km north of start",
+                "B is 30 km east of start",
+                "Distance B to midpoint = √(10² + 30²) = √(100+900) = √1000 ≈ 31.6 km"
+              ],
+              "answer": "A to C: 60 km, B to midpoint: 31.6 km",
+              "difficulty": 3
+            }
+          ],
+          "topic_id": "word-problems.distance-time",
+          "related_topics": [
+            "Word Problems with Variables",
+            "Ratios & Proportions",
+            "Work & Rate Problems"
+          ]
+        },
+        {
+          "id": "CAT04-T02",
+          "title": "Work & Rate Problems",
+          "identification_cues": [
+            "A task is completed at a certain rate",
+            "Multiple workers/pipes/machines combine efforts"
+          ],
+          "examples": [
+            {
+              "question": "A tap fills a bath in 10 minutes. A drain empties it in 15 minutes. If both are open, how long to fill an empty bath?",
+              "solution_steps": [
+                "Tap rate: +1/10 per minute (filling)",
+                "Drain rate: −1/15 per minute (emptying)",
+                "Net rate: 1/10 − 1/15 = 3/30 − 2/30 = 1/30 per minute",
+                "Time to fill: 30 minutes"
+              ],
+              "answer": "30 minutes",
+              "difficulty": 2
+            },
+            {
+              "question": "Worker A finishes a job in 6 hours, Worker B in 4 hours. How long if they work together?",
+              "options": [
+                "2 hours",
+                "2.4 hours",
+                "3 hours",
+                "5 hours"
+              ],
+              "solution_steps": [
+                "Rate A = 1/6, Rate B = 1/4",
+                "Combined = 1/6 + 1/4 = 2/12 + 3/12 = 5/12",
+                "Time = 12/5 = 2.4 hours"
+              ],
+              "answer": "2.4 hours",
+              "difficulty": 2
+            },
+            {
+              "question": "A tap fills a tank in 8 hours. A drain empties it in 12 hours. Both open — how long to fill?",
+              "options": [
+                "20 hours",
+                "24 hours",
+                "28 hours",
+                "36 hours"
+              ],
+              "solution_steps": [
+                "Fill rate = 1/8, Drain rate = 1/12",
+                "Net rate = 1/8 − 1/12 = 3/24 − 2/24 = 1/24",
+                "Time = 24 hours"
+              ],
+              "answer": "24 hours",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Think in terms of 'fraction of job done per unit time'",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "A drain/leak subtracts from the filling rate",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Use LCM to simplify fractions with big numbers"
+            ],
+            "worked_example": {
+              "question": "A tap fills a bath in 10 minutes. A drain empties it in 15 minutes. If both are open, how long to fill an empty bath?",
+              "steps": [
+                "Use LCM to simplify fractions with big numbers → Tap rate: +1/10 per minute (filling)",
+                "Answer: 30 minutes"
+              ],
+              "answer": "30 minutes"
+            }
+          },
+          "concept_explanation": "Multiple workers, pipes, or machines combining efforts to complete a task.",
+          "key_formulas": [
+            "Individual rate = 1 ÷ time to complete the whole job",
+            "Combined rate = sum of individual rates",
+            "Workers × Days = constant (total work units)"
+          ],
+          "topic_id": "word-problems.work-rate",
+          "common_mistakes": [
+            "Adding times directly instead of adding rates — if A takes 3 hours and B takes 6 hours, together ≠ 9 hours",
+            "Not converting individual completion times to rates (work per hour) first",
+            "Forgetting that more workers means less time (inverse relationship)",
+            "Not handling the case where workers have different efficiencies"
+          ],
+          "related_topics": [
+            "Speed, Distance & Time (Kinematics)",
+            "Fractions, Decimals & Percentages",
+            "Ratios & Proportions"
+          ]
+        },
+        {
+          "id": "CAT04-T03",
+          "title": "Mixture & Concentration",
+          "identification_cues": [
+            "Two or more substances are mixed",
+            "A concentration or percentage of an ingredient is given"
+          ],
+          "examples": [
+            {
+              "question": "20 litres of 30% alcohol is mixed with 10 litres of 60% alcohol. What is the new concentration?",
+              "solution_steps": [
+                "Alcohol in first: 0.30 × 20 = 6 litres",
+                "Alcohol in second: 0.60 × 10 = 6 litres",
+                "Total alcohol: 12 litres, Total volume: 30 litres",
+                "Concentration: 12 ÷ 30 = 0.40 = 40%"
+              ],
+              "answer": "40%",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "The mixture concentration is always between the two original concentrations (sanity check)",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems."
+            },
+            {
+              "tip": "The larger volume 'pulls' the concentration towards itself",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Write the ratio in the order stated in the question",
+              "Simplify by dividing by the HCF",
+              "For sharing: find total parts → value of one part → value of each share",
+              "For proportion: set up equivalent ratios and cross-multiply"
+            ],
+            "worked_example": {
+              "question": "20 litres of 30% alcohol is mixed with 10 litres of 60% alcohol. What is the new concentration?",
+              "steps": [
+                "Write the ratio in the order stated in the question → Alcohol in first: 0.30 × 20 = 6 litres",
+                "Simplify by dividing by the HCF → Alcohol in second: 0.60 × 10 = 6 litres",
+                "For sharing: find total parts → value of one part → value of each share → Total alcohol: 12 litres, Total volume: 30 litres",
+                "For proportion: set up equivalent ratios and cross-multiply → Concentration: 12 ÷ 30 = 0.40 = 40%"
+              ],
+              "answer": "40%"
+            }
+          },
+          "concept_explanation": "Combining two or more substances with different concentrations.",
+          "key_formulas": [
+            "C₁V₁ + C₂V₂ = C_new(V₁ + V₂)"
+          ],
+          "key_rules": [
+            "Amount of substance = Concentration × Total Volume"
+          ],
+          "topic_id": "word-problems.mixtures",
+          "common_mistakes": [
+            "Averaging concentrations instead of using the weighted method",
+            "Not tracking the amount of pure substance (concentration × volume) in each part",
+            "Confusing the volume of solution with the amount of solute",
+            "Forgetting that adding pure water (0% concentration) dilutes the mixture"
+          ],
+          "related_topics": [
+            "Ratios & Proportions",
+            "Fractions, Decimals & Percentages",
+            "Word Problems with Variables"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAT05",
+      "category": "Geometry & Spatial Reasoning",
+      "topics": [
+        {
+          "id": "CAT05-T01",
+          "title": "Perimeter & Area",
+          "identification_cues": [
+            "A shape is described or shown",
+            "Asked for perimeter (boundary) or area (coverage)"
+          ],
+          "pi_approximations": [
+            "π ≈ 3.14",
+            "π ≈ 22/7"
+          ],
+          "examples": [
+            {
+              "question": "A path of width 2 m surrounds a rectangular garden 10 m × 6 m. What is the area of the path?",
+              "solution_steps": [
+                "Outer rectangle: (10+4) × (6+4) = 14 × 10 = 140 m²",
+                "Inner garden: 10 × 6 = 60 m²",
+                "Area of path: 140 − 60 = 80 m²"
+              ],
+              "answer": "80 m²",
+              "difficulty": 2
+            },
+            {
+              "question": "A rectangular garden is 12 m by 8 m with a 1 m wide path around it. What is the area of the path?",
+              "options": [
+                "40 m²",
+                "44 m²",
+                "84 m²",
+                "96 m²"
+              ],
+              "solution_steps": [
+                "Outer rectangle: 14 m × 10 m = 140 m²",
+                "Inner rectangle: 12 m × 8 m = 96 m²",
+                "Path = 140 − 96 = 44 m²"
+              ],
+              "answer": "44 m²",
+              "difficulty": 2
+            },
+            {
+              "question": "A semicircle has diameter 10 cm. What is its area?",
+              "options": [
+                "25π cm²",
+                "12.5π cm²",
+                "50π cm²",
+                "100π cm²"
+              ],
+              "solution_steps": [
+                "Radius = 5 cm",
+                "Full circle area = π × 5² = 25π",
+                "Semicircle = 25π/2 = 12.5π cm²"
+              ],
+              "answer": "12.5π cm²",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "For composite shapes, sketch and label all dimensions",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "A border adds to both sides: 2 m border adds 4 m to length AND 4 m to width",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "Perimeter uses the outer boundary only — don't include internal lines",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems.",
+              "example": "don't include internal lines"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Draw or annotate the diagram with all known values",
+              "Identify the shape type and recall its formula",
+              "For compound shapes: break into simple shapes",
+              "Check units and whether the answer is reasonable"
+            ],
+            "worked_example": {
+              "question": "A path of width 2 m surrounds a rectangular garden 10 m × 6 m. What is the area of the path?",
+              "steps": [
+                "Draw or annotate the diagram with all known values → Outer rectangle: (10+4) × (6+4) = 14 × 10 = 140 m²",
+                "Identify the shape type and recall its formula → Inner garden: 10 × 6 = 60 m²",
+                "For compound shapes: break into simple shapes → Area of path: 140 − 60 = 80 m²",
+                "Check units and whether the answer is reasonable → Verify: 80 m² ✓"
+              ],
+              "answer": "80 m²"
+            }
+          },
+          "concept_explanation": "Finding boundary length or surface coverage of 2D shapes.",
+          "key_formulas": [
+            {
+              "shape": "Rectangle",
+              "perimeter": "2(l + w)",
+              "area": "l × w"
+            },
+            {
+              "shape": "Square",
+              "perimeter": "4s",
+              "area": "s²"
+            },
+            {
+              "shape": "Triangle",
+              "perimeter": "a + b + c",
+              "area": "½ × base × height"
+            },
+            {
+              "shape": "Parallelogram",
+              "perimeter": "2(a + b)",
+              "area": "base × height"
+            },
+            {
+              "shape": "Trapezium",
+              "perimeter": "a + b + c + d",
+              "area": "½ × (a + b) × h"
+            },
+            {
+              "shape": "Circle",
+              "perimeter": "2πr (circumference)",
+              "area": "πr²"
+            },
+            "Break into simpler parts. Add areas (or subtract for holes)."
+          ],
+          "topic_id": "measurement.perimeter",
+          "common_mistakes": [
+            "Using the wrong height — always use the perpendicular height, not the slant side",
+            "Forgetting to halve for triangles or to use πr² (not πd²) for circles",
+            "Not breaking composite shapes into simpler components",
+            "Confusing perimeter (1D length) with area (2D space) and using wrong units"
+          ],
+          "related_topics": [
+            "Volume & Surface Area",
+            "Angles & Lines",
+            "Coordinate Geometry"
+          ]
+        },
+        {
+          "id": "CAT05-T02",
+          "title": "Volume & Surface Area",
+          "examples": [
+            {
+              "question": "A cylindrical can has radius 5 cm and height 12 cm. Find its volume. (π ≈ 3.14)",
+              "solution_steps": [
+                "V = πr²h = 3.14 × 25 × 12 = 3.14 × 300 = 942 cm³"
+              ],
+              "answer": "942 cm³",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Volume is in cubic units (cm³), area is in square units (cm²) — always include the right unit",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems.",
+              "example": "always include the right unit"
+            },
+            {
+              "tip": "For surface area: count the number of faces first, then calculate each",
+              "explanation": "Getting this step right early prevents cascading errors through the rest of the solution."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Draw or annotate the diagram with all known values",
+              "Identify the shape type and recall its formula",
+              "For compound shapes: break into simple shapes",
+              "Check units and whether the answer is reasonable"
+            ],
+            "worked_example": {
+              "question": "A cylindrical can has radius 5 cm and height 12 cm. Find its volume. (π ≈ 3.14)",
+              "steps": [
+                "Draw or annotate the diagram with all known values → V = πr²h = 3.14 × 25 × 12 = 3.14 × 300 = 942 cm³",
+                "Identify the shape type and recall its formula → Apply to this problem",
+                "For compound shapes: break into simple shapes",
+                "Check units and whether the answer is reasonable → Verify: 942 cm³ ✓"
+              ],
+              "answer": "942 cm³"
+            }
+          },
+          "concept_explanation": "Finding space inside or total face area of 3D shapes.",
+          "key_formulas": [
+            {
+              "shape": "Cube",
+              "volume": "s³",
+              "surface_area": "6s²"
+            },
+            {
+              "shape": "Rectangular prism",
+              "volume": "l × w × h",
+              "surface_area": "2(lw + lh + wh)"
+            },
+            {
+              "shape": "Cylinder",
+              "volume": "πr²h",
+              "surface_area": "2πr² + 2πrh"
+            },
+            {
+              "shape": "Triangular prism",
+              "volume": "½bh × length",
+              "surface_area": "sum of all face areas"
+            }
+          ],
+          "topic_id": "measurement.area",
+          "identification_cues": [
+            "Question involves 3D shapes like cubes, rectangular prisms, cylinders, or cones",
+            "Asks how much a container can hold (volume) or how much material is needed to cover it (surface area)",
+            "Mentions litres, cm³, m³, or asks about capacity"
+          ],
+          "common_mistakes": [
+            "Confusing volume formulas with surface area formulas",
+            "Forgetting the ⅓ factor for pyramids and cones",
+            "Not converting between cm³ and litres correctly (1000 cm³ = 1 litre)",
+            "Using diameter instead of radius in cylinder or sphere calculations"
+          ],
+          "related_topics": [
+            "Perimeter & Area",
+            "Angles & Lines",
+            "3D Nets & Visualization"
+          ]
+        },
+        {
+          "id": "CAT05-T03",
+          "title": "Angles & Lines",
+          "angle_facts": [
+            {
+              "fact": "Angles on a straight line",
+              "rule": "Sum = 180°"
+            },
+            {
+              "fact": "Angles around a point",
+              "rule": "Sum = 360°"
+            },
+            {
+              "fact": "Vertically opposite angles",
+              "rule": "Equal"
+            },
+            {
+              "fact": "Alternate angles (Z-angles)",
+              "rule": "Equal — parallel lines"
+            },
+            {
+              "fact": "Corresponding angles (F-angles)",
+              "rule": "Equal — parallel lines"
+            },
+            {
+              "fact": "Co-interior angles (C-angles)",
+              "rule": "Sum = 180° — parallel lines"
+            },
+            {
+              "fact": "Triangle angles",
+              "rule": "Sum = 180°"
+            },
+            {
+              "fact": "Quadrilateral angles",
+              "rule": "Sum = 360°"
+            },
+            {
+              "fact": "Exterior angle of triangle",
+              "rule": "= Sum of two opposite interior angles"
+            },
+            {
+              "fact": "Isosceles triangle",
+              "rule": "Two base angles are equal"
+            },
+            {
+              "fact": "Equilateral triangle",
+              "rule": "All angles = 60°"
+            }
+          ],
+          "examples": [
+            {
+              "question": "Two parallel lines are cut by a transversal. One co-interior angle is 115°. Find the other.",
+              "solution_steps": [
+                "Co-interior angles sum to 180°",
+                "Other angle = 180° − 115° = 65°"
+              ],
+              "answer": "65°",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Look for Z, F, and C shapes between parallel lines and transversals",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "Exterior angle of a triangle is a powerful shortcut",
+              "explanation": "Index laws let you simplify expressions with powers quickly.",
+              "example": "x³ × x⁴ = x⁷ (add powers), x⁸ ÷ x³ = x⁵ (subtract powers), (x²)³ = x⁶ (multiply powers)"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Draw or annotate the diagram with all known values",
+              "Identify the shape type and recall its formula",
+              "For compound shapes: break into simple shapes",
+              "Check units and whether the answer is reasonable"
+            ],
+            "worked_example": {
+              "question": "Two parallel lines are cut by a transversal. One co-interior angle is 115°. Find the other.",
+              "steps": [
+                "Draw or annotate the diagram with all known values → Co-interior angles sum to 180°",
+                "Identify the shape type and recall its formula → Other angle = 180° − 115° = 65°",
+                "For compound shapes: break into simple shapes",
+                "Check units and whether the answer is reasonable → Verify: 65° ✓"
+              ],
+              "answer": "65°"
+            }
+          },
+          "concept_explanation": "Finding unknown angles using angle relationships.",
+          "topic_id": "proportion.direct",
+          "identification_cues": [
+            "Diagram shows intersecting or parallel lines with angles to find",
+            "Question involves angle calculations requiring multiple steps",
+            "Uses properties of triangles, quadrilaterals, or parallel lines"
+          ],
+          "common_mistakes": [
+            "Confusing alternate angles (Z-shape, equal) with co-interior angles (C-shape, sum to 180°)",
+            "Not recognising all the angle relationships in a complex diagram",
+            "Assuming lines are parallel without this being stated",
+            "Forgetting that the exterior angle of a triangle = sum of the two opposite interior angles"
+          ],
+          "related_topics": [
+            "Perimeter & Area",
+            "Coordinate Geometry",
+            "3D Nets & Visualization"
+          ]
+        },
+        {
+          "id": "CAT05-T04",
+          "title": "Coordinate Geometry",
+          "tips_and_tricks": [
+            {
+              "tip": "Count grid squares to check distance calculations where possible",
+              "explanation": "A quick verification step catches careless errors and can save marks."
+            },
+            {
+              "tip": "Gradient = Rise ÷ Run. Up-right = positive gradient",
+              "explanation": "Gradient = rise ÷ run = (y₂ - y₁) ÷ (x₂ - x₁). Positive = uphill, negative = downhill.",
+              "example": "Points (1, 2) and (3, 8): gradient = (8-2)/(3-1) = 6/2 = 3"
+            },
+            {
+              "tip": "Selective exam level rarely goes beyond midpoint and gradient",
+              "explanation": "Gradient = rise ÷ run = (y₂ - y₁) ÷ (x₂ - x₁). Positive = uphill, negative = downhill.",
+              "example": "Points (1, 2) and (3, 8): gradient = (8-2)/(3-1) = 6/2 = 3"
+            }
+          ],
+          "examples": [
+            {
+              "question": "Find the midpoint of (2, 3) and (8, 7).",
+              "solution_steps": [
+                "M = ((2+8)/2, (3+7)/2)",
+                "M = (5, 5)"
+              ],
+              "answer": "(5, 5)",
+              "difficulty": 1
+            },
+            {
+              "question": "What is the gradient of the line through (1, 2) and (4, 11)?",
+              "solution_steps": [
+                "m = (11−2)/(4−1) = 9/3 = 3"
+              ],
+              "answer": "3",
+              "difficulty": 2
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Draw or annotate the diagram with all known values",
+              "Identify the shape type and recall its formula",
+              "For compound shapes: break into simple shapes",
+              "Check units and whether the answer is reasonable"
+            ],
+            "worked_example": {
+              "question": "Find the midpoint of (2, 3) and (8, 7).",
+              "steps": [
+                "Draw or annotate the diagram with all known values → M = ((2+8)/2, (3+7)/2)",
+                "Identify the shape type and recall its formula → M = (5, 5)",
+                "For compound shapes: break into simple shapes",
+                "Check units and whether the answer is reasonable → Verify: (5, 5) ✓"
+              ],
+              "answer": "(5, 5)"
+            }
+          },
+          "concept_explanation": "Working with points on a number plane — midpoint, distance, gradient.",
+          "key_formulas": [
+            {
+              "concept": "Midpoint",
+              "formula": "((x₁+x₂)/2, (y₁+y₂)/2)"
+            },
+            {
+              "concept": "Distance",
+              "formula": "√[(x₂−x₁)² + (y₂−y₁)²]"
+            },
+            {
+              "concept": "Gradient (slope)",
+              "formula": "(y₂−y₁) ÷ (x₂−x₁)"
+            }
+          ],
+          "topic_id": "geometry.coordinate",
+          "identification_cues": [
+            "Question shows a coordinate grid or gives coordinates of points",
+            "Asks for distances between points, midpoints, or gradients",
+            "Involves finding points that satisfy given conditions on a grid"
+          ],
+          "common_mistakes": [
+            "Mixing up x and y coordinates (x is horizontal, y is vertical)",
+            "Making sign errors with negative coordinates",
+            "Forgetting to take the square root in the distance formula",
+            "Not recognising that gradient = rise/run"
+          ],
+          "related_topics": [
+            "Perimeter & Area",
+            "Angles & Lines",
+            "Number Sequences"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAT06",
+      "category": "Data Interpretation",
+      "topics": [
+        {
+          "id": "CAT06-T01",
+          "title": "Tables & Charts",
+          "identification_cues": [
+            "Visual data display is provided",
+            "Asked to: read a value, find a total, compare categories, identify trends"
+          ],
+          "common_question_types": [
+            {
+              "question_type": "Difference between A and B",
+              "method": "Read both values, subtract"
+            },
+            {
+              "question_type": "Percentage represented by X",
+              "method": "(X ÷ Total) × 100"
+            },
+            {
+              "question_type": "Biggest increase between years",
+              "method": "Find the steepest rise"
+            },
+            {
+              "question_type": "Lowest/highest value",
+              "method": "Find the minimum/maximum"
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Mis-reading the scale is the #1 error — check scale every time",
+              "explanation": "A quick verification step catches careless errors and can save marks.",
+              "example": "check scale every time"
+            },
+            {
+              "tip": "For pie charts: central angle for X% = (X/100) × 360°",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            },
+            {
+              "tip": "'Approximately' means you can estimate — don't over-calculate",
+              "explanation": "Mean = total sum ÷ count. To find a missing value, use: missing = mean × count - known sum.",
+              "example": "Scores: 8, 6, 9, 7, ? with mean 8 → total needed = 40, sum so far = 30, missing = 10"
+            }
+          ],
+          "examples": [
+            {
+              "question": "A bar chart shows Mon=12, Tue=8, Wed=15, Thu=10, Fri=5 visitors. What is the mean?",
+              "solution_steps": [
+                "Total = 12+8+15+10+5 = 50",
+                "Mean = 50/5 = 10"
+              ],
+              "answer": "10 visitors",
+              "difficulty": 1
+            },
+            {
+              "question": "A pie chart shows 25% sport, 40% music, rest is reading. If 200 students surveyed, how many chose reading?",
+              "solution_steps": [
+                "Reading = 100% − 25% − 40% = 35%",
+                "35% of 200 = 70"
+              ],
+              "answer": "70 students",
+              "difficulty": 2
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Read the title, axis labels, and legend first",
+              "Identify exactly what the question asks (value, trend, comparison)",
+              "For calculations: extract the exact numbers from the chart",
+              "Watch for scale tricks — axes that don't start at zero"
+            ],
+            "worked_example": {
+              "question": "A bar chart shows Mon=12, Tue=8, Wed=15, Thu=10, Fri=5 visitors. What is the mean?",
+              "steps": [
+                "Read the title, axis labels, and legend first → Total = 12+8+15+10+5 = 50",
+                "Identify exactly what the question asks (value, trend, comparison) → Mean = 50/5 = 10",
+                "For calculations: extract the exact numbers from the chart",
+                "Watch for scale tricks — axes that don't start at zero",
+                "Answer: 10 visitors"
+              ],
+              "answer": "10 visitors"
+            }
+          },
+          "concept_explanation": "Reading and interpreting bar charts, line graphs, pie charts, or data tables.",
+          "topic_id": "data-interpretation.tables",
+          "common_mistakes": [
+            "Misreading the scale on a graph axis",
+            "Not reading column/row headers carefully in tables",
+            "Calculating percentage change from the wrong base value",
+            "Not checking all the data before answering — the answer may require combining multiple rows/columns"
+          ],
+          "related_topics": [
+            "Mean, Median, Mode & Range",
+            "Probability",
+            "Fractions, Decimals & Percentages"
+          ]
+        },
+        {
+          "id": "CAT06-T02",
+          "title": "Mean, Median, Mode & Range",
+          "definitions": [
+            {
+              "measure": "Mean",
+              "definition": "The average",
+              "how_to_find": "Sum of values ÷ count of values"
+            },
+            {
+              "measure": "Median",
+              "definition": "The middle value",
+              "how_to_find": "Sort the list; take the middle (or average of two middle values)"
+            },
+            {
+              "measure": "Mode",
+              "definition": "Most frequent value",
+              "how_to_find": "The value that appears most often"
+            },
+            {
+              "measure": "Range",
+              "definition": "Spread of data",
+              "how_to_find": "Maximum − Minimum"
+            }
+          ],
+          "examples": [
+            {
+              "question": "Data: 4, 7, 3, 7, 9, 2, 7, 5. Find mean, median, mode, range.",
+              "solution_steps": [
+                "Sort: 2, 3, 4, 5, 7, 7, 7, 9",
+                "Mean: (2+3+4+5+7+7+7+9) ÷ 8 = 44 ÷ 8 = 5.5",
+                "Median: average of 4th and 5th = (5+7)/2 = 6",
+                "Mode: 7 (appears 3 times)",
+                "Range: 9 − 2 = 7"
+              ],
+              "answers": {
+                "mean": 5.5,
+                "median": 6,
+                "mode": 7,
+                "range": 7
+              },
+              "difficulty": 3
+            },
+            {
+              "question": "Test scores: 72, 85, 68, 91, 85, 78. What is the median?",
+              "options": [
+                "78",
+                "79.8",
+                "81.5",
+                "85"
+              ],
+              "solution_steps": [
+                "Ordered: 68, 72, 78, 85, 85, 91",
+                "6 values → median = average of 3rd and 4th",
+                "Median = (78 + 85)/2 = 81.5"
+              ],
+              "answer": "81.5",
+              "difficulty": 1
+            },
+            {
+              "question": "The mean of 5 numbers is 12. Four of them are 8, 10, 14, 16. What is the fifth?",
+              "options": [
+                "10",
+                "12",
+                "14",
+                "16"
+              ],
+              "solution_steps": [
+                "Sum = 5 × 12 = 60",
+                "Known sum = 8+10+14+16 = 48",
+                "Fifth = 60 − 48 = 12"
+              ],
+              "answer": "12",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Always sort the data before finding median or mode",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems."
+            },
+            {
+              "tip": "Working backwards from mean: missing value = (mean × count) − sum of known",
+              "explanation": "Mean = total sum ÷ count. To find a missing value, use: missing = mean × count - known sum.",
+              "example": "Scores: 8, 6, 9, 7, ? with mean 8 → total needed = 40, sum so far = 30, missing = 10"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "For an even number of values, the median is the average of the two middle values"
+            ],
+            "worked_example": {
+              "question": "Test scores: 72, 85, 68, 91, 85, 78. What is the median?",
+              "steps": [
+                "For an even number of values, the median is the average of the two middle values → Ordered: 68, 72, 78, 85, 85, 91",
+                "Answer: 81.5"
+              ],
+              "answer": "81.5"
+            }
+          },
+          "concept_explanation": "Calculating and interpreting measures of central tendency and spread.",
+          "key_formulas": [
+            "Missing value = (mean × count) − sum of known values"
+          ],
+          "topic_id": "data-interpretation",
+          "identification_cues": [
+            "Question asks for the mean, median, mode, or range of a data set",
+            "Involves finding a missing value given the mean or median",
+            "Data may be presented in a frequency table rather than a simple list"
+          ],
+          "common_mistakes": [
+            "Not ordering data before finding the median",
+            "Using the wrong formula for mean from a frequency table (sum of f×x, divided by sum of f)",
+            "Confusing range (max − min) with interquartile range",
+            "Not considering whether adding or removing a value changes the median position"
+          ],
+          "related_topics": [
+            "Tables & Charts",
+            "Probability",
+            "Fractions, Decimals & Percentages"
+          ]
+        },
+        {
+          "id": "CAT06-T03",
+          "title": "Probability",
+          "identification_cues": [
+            "Involves random events, chance, likelihood",
+            "Key words: probability, chance, likelihood, at random, fair"
+          ],
+          "probability_rules": [
+            "0 ≤ P ≤ 1 (always between 0 and 1)",
+            "P(not A) = 1 − P(A)",
+            "P(A and B) for independent events = P(A) × P(B)",
+            "P(A or B) for mutually exclusive events = P(A) + P(B)"
+          ],
+          "examples": [
+            {
+              "question": "A bag has 4 red and 6 blue marbles. Two drawn without replacement. P(both red)?",
+              "solution_steps": [
+                "P(1st red) = 4/10 = 2/5",
+                "P(2nd red | 1st was red) = 3/9 = 1/3",
+                "P(both red) = 2/5 × 1/3 = 2/15"
+              ],
+              "answer": "2/15",
+              "difficulty": 2
+            },
+            {
+              "question": "A bag has 3 red, 4 blue, 5 green marbles. What is P(not green)?",
+              "options": [
+                "5/12",
+                "7/12",
+                "3/12",
+                "4/12"
+              ],
+              "solution_steps": [
+                "Total = 12",
+                "Not green = 3+4 = 7",
+                "P = 7/12"
+              ],
+              "answer": "7/12",
+              "difficulty": 1
+            },
+            {
+              "question": "A coin is flipped 3 times. What is P(exactly 2 heads)?",
+              "options": [
+                "1/4",
+                "3/8",
+                "1/2",
+                "1/8"
+              ],
+              "solution_steps": [
+                "Outcomes: HHH,HHT,HTH,THH,HTT,THT,TTH,TTT = 8",
+                "Exactly 2H: HHT,HTH,THH = 3",
+                "P = 3/8"
+              ],
+              "answer": "3/8",
+              "difficulty": 2
+            },
+            {
+              "question": "Two dice are rolled. P(sum > 9)?",
+              "options": [
+                "1/12",
+                "1/6",
+                "5/36",
+                "7/36"
+              ],
+              "solution_steps": [
+                "Sum 10: (4,6)(5,5)(6,4) = 3",
+                "Sum 11: (5,6)(6,5) = 2",
+                "Sum 12: (6,6) = 1",
+                "Total = 6 out of 36",
+                "P = 6/36 = 1/6"
+              ],
+              "answer": "1/6",
+              "difficulty": 2
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "'Without replacement' means the denominator decreases on the second draw",
+              "explanation": "Mean = total sum ÷ count. To find a missing value, use: missing = mean × count - known sum.",
+              "example": "Scores: 8, 6, 9, 7, ? with mean 8 → total needed = 40, sum so far = 30, missing = 10"
+            },
+            {
+              "tip": "All probabilities in a sample space must add to 1",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Use a probability tree for two-stage problems"
+            ],
+            "worked_example": {
+              "question": "A bag has 3 red, 4 blue, 5 green marbles. What is P(not green)?",
+              "steps": [
+                "Use a probability tree for two-stage problems → Total = 12",
+                "Answer: 7/12"
+              ],
+              "answer": "7/12"
+            }
+          },
+          "concept_explanation": "Finding the likelihood of random events, including two-stage probability.",
+          "key_formulas": [
+            "P(event) = Number of favourable outcomes ÷ Total number of outcomes",
+            "Expected outcomes = Probability × Number of trials"
+          ],
+          "topic_id": "statistics.probability",
+          "common_mistakes": [
+            "Not listing all possible outcomes systematically",
+            "Confusing 'with replacement' and 'without replacement'",
+            "Adding probabilities when you should multiply (AND events)",
+            "Forgetting that probabilities must be between 0 and 1"
+          ],
+          "related_topics": [
+            "Tables & Charts",
+            "Venn Diagrams & Sets",
+            "Fractions, Decimals & Percentages"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAT07",
+      "category": "Logic & Reasoning Problems",
+      "topics": [
+        {
+          "id": "CAT07-T01",
+          "title": "Venn Diagrams & Sets",
+          "identification_cues": [
+            "Overlapping categories or groups",
+            "Key words: both, neither, only one, at least one, total"
+          ],
+          "examples": [
+            {
+              "question": "30 students: 18 like maths, 15 like science, 7 like both. How many like neither?",
+              "solution_steps": [
+                "n(M ∪ S) = 18 + 15 − 7 = 26",
+                "Neither = 30 − 26 = 4"
+              ],
+              "answer": "4 students",
+              "difficulty": 2
+            },
+            {
+              "question": "In a class of 40: 25 play cricket, 18 play soccer, 8 play both. How many play neither?",
+              "options": [
+                "3",
+                "5",
+                "7",
+                "10"
+              ],
+              "solution_steps": [
+                "Cricket only = 25−8 = 17",
+                "Soccer only = 18−8 = 10",
+                "Either = 17+10+8 = 35",
+                "Neither = 40−35 = 5"
+              ],
+              "answer": "5",
+              "difficulty": 1
+            },
+            {
+              "question": "30 students: 18 like maths, 15 like science, 20 like English. 10 like maths & science, 8 like maths & English, 7 like science & English, 5 like all three. How many like exactly one subject?",
+              "options": [
+                "10",
+                "12",
+                "15",
+                "18"
+              ],
+              "solution_steps": [
+                "Only maths = 18−10−8+5 = 5",
+                "Only science = 15−10−7+5 = 3",
+                "Only English = 20−8−7+5 = 10",
+                "Exactly one = 5+3+10 = 18"
+              ],
+              "answer": "18",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Always draw the Venn diagram — even a quick sketch saves errors",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems.",
+              "example": "even a quick sketch saves errors"
+            },
+            {
+              "tip": "'At least one' = Total − neither",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Start filling from the innermost region (both/all) and work outward"
+            ],
+            "worked_example": {
+              "question": "In a class of 40: 25 play cricket, 18 play soccer, 8 play both. How many play neither?",
+              "steps": [
+                "Start filling from the innermost region (both/all) and work outward → Cricket only = 25−8 = 17"
+              ],
+              "answer": "5"
+            }
+          },
+          "concept_explanation": "Problems involving overlapping groups or categories.",
+          "key_formulas": [
+            "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)"
+          ],
+          "topic_id": "patterns.matrix",
+          "common_mistakes": [
+            "Double-counting the intersection — it's already included in each circle's total",
+            "Not starting from the intersection when filling in a Venn diagram",
+            "Forgetting those in 'neither' set (outside all circles)",
+            "Confusing 'A only' (in A but not B) with 'A' (in A, possibly also in B)"
+          ],
+          "related_topics": [
+            "Probability",
+            "Tables & Charts",
+            "Logical Deduction"
+          ]
+        },
+        {
+          "id": "CAT07-T02",
+          "title": "Matrix / Grid Problems",
+          "tips_and_tricks": [
+            {
+              "tip": "Mark what CANNOT go in a cell — the 'can't be' approach is often faster",
+              "explanation": "This is a common mistake that costs marks in exams. Make sure you understand the difference."
+            },
+            {
+              "tip": "For 4×4 grids: each row and column must contain each value once",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "examples": [
+            {
+              "question": "In a 3×3 grid, each row, column, and diagonal sums to 15. Fill in: [2,?,6], [?,5,?], [?,?,?]",
+              "solution_steps": [
+                "Row 1: 2+?+6=15 → ?=7",
+                "Col 1: 2+?+?=15",
+                "Diagonal: 2+5+?=15 → ?=8 (bottom right)",
+                "Continue using sum=15 for each line"
+              ],
+              "answer": "2,7,6 / 9,5,1 / 4,3,8",
+              "difficulty": 2
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Organise information in a table, grid, or Venn diagram",
+              "Start with the most restrictive clue",
+              "Use elimination: cross out impossibilities",
+              "Check that every clue is satisfied by your answer"
+            ],
+            "worked_example": {
+              "question": "In a 3×3 grid, each row, column, and diagonal sums to 15. Fill in: [2,?,6], [?,5,?], [?,?,?]",
+              "steps": [
+                "Organise information in a table, grid, or Venn diagram → Row 1: 2+?+6=15 → ?=7",
+                "Start with the most restrictive clue → Col 1: 2+?+?=15",
+                "Use elimination: cross out impossibilities → Diagonal: 2+5+?=15 → ?=8 (bottom right)",
+                "Check that every clue is satisfied by your answer → Continue using sum=15 for each line",
+                "Answer: 2,7,6 / 9,5,1 / 4,3,8"
+              ],
+              "answer": "2,7,6 / 9,5,1 / 4,3,8"
+            }
+          },
+          "concept_explanation": "Grids where rows and columns have constraints (e.g., each value appears exactly once).",
+          "topic_id": "patterns.matrix",
+          "identification_cues": [
+            "Numbers are arranged in a grid or table with a missing value",
+            "Rows, columns, or diagonals follow a consistent mathematical rule",
+            "May involve magic squares, cross-number puzzles, or operation grids"
+          ],
+          "common_mistakes": [
+            "Assuming the rule applies only to rows — always check columns and diagonals too",
+            "Not testing the discovered rule against ALL available entries",
+            "Overlooking that the operation might vary (e.g., row 1 uses addition, row 2 uses multiplication)",
+            "Making arithmetic errors when verifying the pattern"
+          ],
+          "related_topics": [
+            "Number Sequences",
+            "Solving for Unknowns",
+            "Logical Deduction"
+          ]
+        },
+        {
+          "id": "CAT07-T03",
+          "title": "Logical Deduction",
+          "identification_cues": [
+            "A narrative with constraints or clues",
+            "You need to find a unique arrangement or conclusion"
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Read all clues before starting — a later clue may instantly resolve an earlier one",
+              "explanation": "Getting this step right early prevents cascading errors through the rest of the solution.",
+              "example": "a later clue may instantly resolve an earlier one"
+            },
+            {
+              "tip": "Work with the most specific clues first",
+              "explanation": "Getting this step right early prevents cascading errors through the rest of the solution."
+            },
+            {
+              "tip": "'Not next to' and 'immediately to the left of' are powerful positional constraints",
+              "explanation": "Index laws let you simplify expressions with powers quickly.",
+              "example": "x³ × x⁴ = x⁷ (add powers), x⁸ ÷ x³ = x⁵ (subtract powers), (x²)³ = x⁶ (multiply powers)"
+            }
+          ],
+          "examples": [
+            {
+              "question": "All cats are animals. Some animals are pets. Which must be true? A) All cats are pets B) Some cats may be pets C) No cats are pets",
+              "solution_steps": [
+                "'All cats are animals' ✓",
+                "'Some animals are pets' — but not necessarily cats",
+                "Some cats COULD be pets, but it's not guaranteed",
+                "B is the only safe conclusion"
+              ],
+              "answer": "B) Some cats may be pets",
+              "difficulty": 2
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Organise information in a table, grid, or Venn diagram",
+              "Start with the most restrictive clue",
+              "Use elimination: cross out impossibilities",
+              "Check that every clue is satisfied by your answer"
+            ],
+            "worked_example": {
+              "question": "All cats are animals. Some animals are pets. Which must be true? A) All cats are pets B) Some cats may be pets C) No cats are pets",
+              "steps": [
+                "Organise information in a table, grid, or Venn diagram → 'All cats are animals' ✓",
+                "Start with the most restrictive clue → 'Some animals are pets' — but not necessarily cats",
+                "Use elimination: cross out impossibilities → Some cats COULD be pets, but it's not guaranteed",
+                "Check that every clue is satisfied by your answer → B is the only safe conclusion",
+                "Answer: B) Some cats may be pets"
+              ],
+              "answer": "B) Some cats may be pets"
+            }
+          },
+          "concept_explanation": "A set of clues about people, objects, or events — deduce who did what or what goes where.",
+          "topic_id": "patterns",
+          "common_mistakes": [
+            "Not using a systematic approach (grid or table) to track all possibilities",
+            "Missing a clue or not fully utilising all given information",
+            "Making an early assumption that contradicts a later clue",
+            "Not double-checking the final answer against ALL clues"
+          ],
+          "related_topics": [
+            "Matrix / Grid Problems",
+            "Venn Diagrams & Sets",
+            "Number Sequences"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAT08",
+      "category": "Time, Money & Everyday Maths",
+      "topics": [
+        {
+          "id": "CAT08-T01",
+          "title": "Time Problems",
+          "tips_and_tricks": [
+            {
+              "tip": "Convert time to a consistent unit before calculating",
+              "explanation": "Always convert to matching units before calculating. Common: 1 km = 1000 m, 1 hr = 60 min.",
+              "example": "3.5 km in metres = 3.5 × 1000 = 3500 m. 90 minutes in hours = 90 ÷ 60 = 1.5 hours"
+            },
+            {
+              "tip": "Watch for AM/PM crossovers in timetable problems",
+              "explanation": "This is a frequently tested trap in exams. Being aware of it gives you an advantage."
+            },
+            {
+              "tip": "'How many complete weeks in N days?' → N ÷ 7 (integer division)",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "examples": [
+            {
+              "question": "A train departs at 8:45 am and arrives at 11:20 am. How long is the journey?",
+              "solution_steps": [
+                "8:45 → 9:00 = 15 min",
+                "9:00 → 11:00 = 2 hours",
+                "11:00 → 11:20 = 20 min",
+                "Total = 2 h 35 min"
+              ],
+              "answer": "2 hours 35 minutes",
+              "difficulty": 1
+            },
+            {
+              "question": "It is 3:50 pm in Melbourne (AEST, UTC+10). What time is it in London (UTC)?",
+              "solution_steps": [
+                "Melbourne is UTC+10",
+                "3:50 pm − 10 hours = 5:50 am (same day)"
+              ],
+              "answer": "5:50 am",
+              "difficulty": 2
+            },
+            {
+              "question": "A bus leaves every 12 minutes. The first bus is at 6:15 am. When is the 5th bus?",
+              "options": [
+                "6:51 am",
+                "7:03 am",
+                "7:15 am",
+                "7:27 am"
+              ],
+              "solution_steps": [
+                "5th bus = 4 intervals after first",
+                "4 × 12 = 48 minutes",
+                "6:15 + 48 min = 7:03 am"
+              ],
+              "answer": "7:03 am",
+              "difficulty": 2
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Convert all time to the same unit (usually hours or minutes)",
+              "For money problems: track carefully using a table",
+              "For interest: Simple = P×r×t, Compound = P(1+r)ᵗ",
+              "Check: does the final amount make sense?"
+            ],
+            "worked_example": {
+              "question": "A train departs at 8:45 am and arrives at 11:20 am. How long is the journey?",
+              "steps": [
+                "Convert all time to the same unit (usually hours or minutes) → 8:45 → 9:00 = 15 min",
+                "For money problems: track carefully using a table → 9:00 → 11:00 = 2 hours",
+                "For interest: Simple = P×r×t, Compound = P(1+r)ᵗ → 11:00 → 11:20 = 20 min",
+                "Check: does the final amount make sense? → Total = 2 h 35 min",
+                "Answer: 2 hours 35 minutes"
+              ],
+              "answer": "2 hours 35 minutes"
+            }
+          },
+          "key_formulas": [
+            "Convert everything to minutes, subtract, then convert back",
+            "9:45 AM to 2:15 PM = (14×60+15) − (9×60+45) = 855 − 585 = 270 minutes = 4 hours 30 min"
+          ],
+          "key_rules": [
+            "1 minute = 60 seconds",
+            "1 hour = 60 minutes",
+            "1 day = 24 hours",
+            "1 week = 7 days",
+            "1 year = 365 days (366 in leap year)"
+          ],
+          "topic_id": "word-problems",
+          "concept_explanation": "Time problems involve calculating durations, converting between time formats (12-hour, 24-hour), and solving problems involving schedules, time zones, and elapsed time. They require careful handling of the base-60 system.",
+          "identification_cues": [
+            "Question involves clocks, schedules, timetables, or time calculations",
+            "Asks for elapsed time, arrival time, or time differences",
+            "Involves converting between hours, minutes, and seconds"
+          ],
+          "common_mistakes": [
+            "Not accounting for the base-60 system: 1 hour = 60 minutes, not 100",
+            "Errors when crossing midnight (12:00 AM) or noon (12:00 PM) in calculations",
+            "Confusing AM and PM or 12-hour and 24-hour formats",
+            "Not considering time zone differences in problems involving different locations"
+          ],
+          "related_topics": [
+            "Speed, Distance & Time (Kinematics)",
+            "Word Problems with Variables",
+            "Arithmetic with Integers"
+          ]
+        },
+        {
+          "id": "CAT08-T02",
+          "title": "Money & Finance",
+          "tips_and_tricks": [
+            {
+              "tip": "Percentage profit/loss is always calculated on the COST PRICE, not the selling price",
+              "explanation": "This is a reliable rule to follow — it applies consistently in exam problems."
+            },
+            {
+              "tip": "'How much change?' → subtract price from amount given",
+              "explanation": "Applying this consistently improves both speed and accuracy in exam problems."
+            }
+          ],
+          "examples": [
+            {
+              "question": "A shirt costs $45 after a 25% discount. What was the original price?",
+              "solution_steps": [
+                "$45 = 75% of original (100% − 25%)",
+                "Original = 45 / 0.75 = $60"
+              ],
+              "answer": "$60",
+              "difficulty": 2
+            },
+            {
+              "question": "$500 invested at 4% simple interest for 3 years. Total amount?",
+              "options": [
+                "$540",
+                "$560",
+                "$624",
+                "$530"
+              ],
+              "solution_steps": [
+                "Interest = 500 × 0.04 × 3 = $60",
+                "Total = 500 + 60 = $560"
+              ],
+              "answer": "$560",
+              "difficulty": 1
+            },
+            {
+              "question": "Buy 3 items at $12.50 each with a 'buy 2 get 1 half price' deal. Total cost?",
+              "options": [
+                "$31.25",
+                "$33.75",
+                "$37.50",
+                "$25.00"
+              ],
+              "solution_steps": [
+                "2 full price: 2 × $12.50 = $25.00",
+                "1 half price: $12.50/2 = $6.25",
+                "Total = $31.25"
+              ],
+              "answer": "$31.25",
+              "difficulty": 2
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Convert all time to the same unit (usually hours or minutes)",
+              "For money problems: track carefully using a table",
+              "For interest: Simple = P×r×t, Compound = P(1+r)ᵗ",
+              "Check: does the final amount make sense?"
+            ],
+            "worked_example": {
+              "question": "$500 invested at 4% simple interest for 3 years. Total amount?",
+              "steps": [
+                "Convert all time to the same unit (usually hours or minutes) → Interest = 500 × 0.04 × 3 = $60",
+                "For money problems: track carefully using a table → Total = 500 + 60 = $560",
+                "For interest: Simple = P×r×t, Compound = P(1+r)ᵗ",
+                "Check: does the final amount make sense? → Verify: $560 ✓"
+              ],
+              "answer": "$560"
+            }
+          },
+          "key_formulas": [
+            {
+              "concept": "Profit",
+              "formula": "Selling Price − Cost Price"
+            },
+            {
+              "concept": "Profit %",
+              "formula": "(Profit ÷ Cost Price) × 100"
+            },
+            {
+              "concept": "Discount",
+              "formula": "Original Price × (Discount % ÷ 100)"
+            },
+            {
+              "concept": "Sale price",
+              "formula": "Original × (1 − discount/100)"
+            },
+            {
+              "concept": "Simple interest",
+              "formula": "I = P × R × T"
+            },
+            {
+              "concept": "Total with interest",
+              "formula": "P + I"
+            }
+          ],
+          "topic_id": "word-problems",
+          "concept_explanation": "Money problems in quantitative reasoning involve calculating costs, change, discounts, profit/loss, and best-value comparisons. They test practical numeracy in real-world financial contexts.",
+          "identification_cues": [
+            "Question involves prices, costs, change, or financial calculations",
+            "Asks for total cost, best value, or how much money is needed",
+            "Involves discounts, taxes, tips, or currency conversions"
+          ],
+          "common_mistakes": [
+            "Rounding intermediate calculations and accumulating rounding errors",
+            "Forgetting to include all costs (e.g., tax, delivery, or multiple items)",
+            "Confusing 'per unit cost' comparisons when package sizes differ",
+            "Not reading whether prices include or exclude GST/tax"
+          ],
+          "related_topics": [
+            "Fractions, Decimals & Percentages",
+            "Word Problems with Variables",
+            "Ratios & Proportions"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Speed Strategies & Exam Technique",
+      "topics": [
+        {
+          "id": "SPEED-T01",
+          "title": "Mental Math Speed Tricks",
+          "key_rules": [
+            "×5: halve, then ×10. E.g., 48×5 = 24×10 = 240",
+            "×25: divide by 4, then ×100. E.g., 36×25 = 9×100 = 900",
+            "×11: write digit, add adjacent pairs, write last digit. E.g., 72×11 = 7_(7+2)_2 = 792",
+            "×9: ×10 minus the number. E.g., 37×9 = 370−37 = 333",
+            "×99: ×100 minus the number. E.g., 45×99 = 4500−45 = 4455",
+            "Square numbers ending in 5: n5² = n×(n+1) followed by 25. E.g., 35² = 3×4=12, append 25 → 1225"
+          ],
+          "benchmark_fractions": [
+            "1/2 = 50%, 1/3 ≈ 33.3%, 1/4 = 25%, 1/5 = 20%",
+            "1/6 ≈ 16.7%, 1/8 = 12.5%, 1/10 = 10%",
+            "2/3 ≈ 66.7%, 3/4 = 75%, 4/5 = 80%"
+          ],
+          "examples": [
+            {
+              "question": "Calculate 64 × 25 mentally.",
+              "options": [
+                "1400",
+                "1500",
+                "1600",
+                "1700"
+              ],
+              "solution_steps": [
+                "64 × 25 = 64 ÷ 4 × 100",
+                "64 ÷ 4 = 16",
+                "16 × 100 = 1600"
+              ],
+              "answer": "1600",
+              "difficulty": 1
+            },
+            {
+              "question": "What is 15% of 240?",
+              "options": [
+                "24",
+                "30",
+                "36",
+                "42"
+              ],
+              "solution_steps": [
+                "10% of 240 = 24",
+                "5% of 240 = 12 (half of 10%)",
+                "15% = 24 + 12 = 36"
+              ],
+              "answer": "36",
+              "difficulty": 1
+            },
+            {
+              "question": "Calculate 73 × 11 mentally.",
+              "options": [
+                "793",
+                "803",
+                "813",
+                "783"
+              ],
+              "solution_steps": [
+                "73 × 11: write 7, then 7+3=10 (carry 1), then 3",
+                "= 7(10)3 → carry: 803"
+              ],
+              "answer": "803",
+              "difficulty": 2
+            },
+            {
+              "question": "Which is larger: 3/7 or 5/12?",
+              "options": [
+                "3/7",
+                "5/12",
+                "They are equal",
+                "Cannot tell"
+              ],
+              "solution_steps": [
+                "Cross multiply: 3×12 = 36 vs 5×7 = 35",
+                "36 > 35, so 3/7 > 5/12"
+              ],
+              "answer": "3/7",
+              "difficulty": 2
+            },
+            {
+              "question": "Estimate: 389 × 0.48",
+              "options": [
+                "About 120",
+                "About 150",
+                "About 190",
+                "About 240"
+              ],
+              "solution_steps": [
+                "≈ 400 × 0.5 = 200",
+                "Actual is slightly less (389 < 400, 0.48 < 0.5)",
+                "≈ 190"
+              ],
+              "answer": "About 190",
+              "difficulty": 2
+            },
+            {
+              "question": "Without calculating exactly: 49² − 48² = ?",
+              "options": [
+                "1",
+                "48",
+                "97",
+                "2401"
+              ],
+              "solution_steps": [
+                "Use difference of squares: a² − b² = (a+b)(a−b)",
+                "49² − 48² = (49+48)(49−48) = 97 × 1 = 97"
+              ],
+              "answer": "97",
+              "difficulty": 3
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "For comparing fractions: cross-multiply and compare (avoids finding common denominators)",
+              "explanation": "You can only add or subtract fractions when they have the same denominator.",
+              "example": "1/3 + 1/4 → LCD = 12 → 4/12 + 3/12 = 7/12"
+            },
+            {
+              "tip": "To check divisibility by 3: sum the digits — if sum is divisible by 3, so is the number",
+              "explanation": "A quick verification step catches careless errors and can save marks.",
+              "example": "if sum is divisible by 3, so is the number"
+            },
+            {
+              "tip": "For 'which is closest' questions: estimate first, then check only the close options",
+              "explanation": "Round numbers to 1 significant figure for quick estimation, then compare with your exact answer.",
+              "example": "49 × 21 ≈ 50 × 20 = 1000. Exact: 1029. Close enough — your calculation is likely correct."
+            },
+            {
+              "tip": "Percentage increase/decrease: multiply by (1 + rate) or (1 − rate)",
+              "explanation": "Percentage change = (difference ÷ original) × 100. Always divide by the ORIGINAL value.",
+              "example": "Price rises from $40 to $50: change = 10, % change = (10/40) × 100 = 25% increase"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "Identify the rate (per hour, per minute, per item)",
+              "Use the formula: Work = Rate × Time",
+              "For combined work: add the rates, not the times",
+              "Convert all units to match before calculating"
+            ],
+            "worked_example": {
+              "question": "Calculate 64 × 25 mentally.",
+              "steps": [
+                "Identify the rate (per hour, per minute, per item) → 64 × 25 = 64 ÷ 4 × 100",
+                "Use the formula: Work = Rate × Time → 64 ÷ 4 = 16",
+                "For combined work: add the rates, not the times → 16 × 100 = 1600",
+                "Convert all units to match before calculating"
+              ],
+              "answer": "1600"
+            }
+          },
+          "concept_explanation": "Shortcuts for fast calculation without a calculator — essential for the 40-second-per-question time limit.",
+          "topic_id": "sequences",
+          "identification_cues": [
+            "Calculations that seem complex but have shortcuts",
+            "Multiplying or dividing by numbers close to round values (99, 25, 50)",
+            "Questions designed to test speed more than complexity"
+          ],
+          "common_mistakes": [
+            "Applying a trick incorrectly — always verify with estimation",
+            "Trying to use mental tricks when the standard method would be faster",
+            "Making errors in the compensation step (e.g., 99 × 7 = 100×7 − 7 = 693, not 703)",
+            "Not practising enough — tricks only save time when they are automatic"
+          ],
+          "related_topics": [
+            "Arithmetic with Integers",
+            "Fractions, Decimals & Percentages",
+            "MCQ Elimination & Exam Strategy"
+          ]
+        },
+        {
+          "id": "SPEED-T02",
+          "title": "MCQ Elimination & Exam Strategy",
+          "examples": [
+            {
+              "question": "If 3x + 5 = 20, what is the value of 6x + 10? Options: A) 15, B) 30, C) 40, D) 45",
+              "options": [
+                "15",
+                "30",
+                "40",
+                "45"
+              ],
+              "solution_steps": [
+                "Notice: 6x + 10 = 2(3x + 5) = 2 × 20 = 40",
+                "Trap: solving for x first (x=5) then computing is slower",
+                "Shortcut: recognise the expression is double the original"
+              ],
+              "answer": "40",
+              "difficulty": 2
+            },
+            {
+              "question": "A price increases by 25% then decreases by 20%. The final price compared to original is: A) Same, B) Higher, C) Lower, D) Cannot tell",
+              "options": [
+                "Same",
+                "Higher",
+                "Lower",
+                "Cannot tell"
+              ],
+              "solution_steps": [
+                "Start with 100",
+                "25% increase: 100 × 1.25 = 125",
+                "20% decrease: 125 × 0.80 = 100",
+                "Same! Trap: students assume increase then decrease cancels unevenly"
+              ],
+              "answer": "Same",
+              "difficulty": 2
+            },
+            {
+              "question": "Which is NOT a factor of 144? A) 8, B) 9, C) 14, D) 16",
+              "options": [
+                "8",
+                "9",
+                "14",
+                "16"
+              ],
+              "solution_steps": [
+                "144/8 = 18 ✓",
+                "144/9 = 16 ✓",
+                "144/14 = 10.28... ✗",
+                "144/16 = 9 ✓"
+              ],
+              "answer": "14",
+              "difficulty": 1
+            }
+          ],
+          "tips_and_tricks": [
+            {
+              "tip": "Time allocation: 30 seconds to solve + 10 seconds to verify = 40 seconds per question",
+              "explanation": "A quick verification step catches careless errors and can save marks."
+            },
+            {
+              "tip": "Back-substitution: plug each option into the question — one will work",
+              "explanation": "Plug your answer back into the original equation to verify it works.",
+              "example": "If x = 5 for 3x + 5 = 20: check 3(5) + 5 = 15 + 5 = 20 ✓"
+            },
+            {
+              "tip": "Watch for 'almost right' answers — they're usually based on a common error",
+              "explanation": "This is a frequently tested trap in exams. Being aware of it gives you an advantage.",
+              "example": "they're usually based on a common error"
+            },
+            {
+              "tip": "Do easy questions first, hard ones last — all questions are worth the same marks",
+              "explanation": "Getting this step right early prevents cascading errors through the rest of the solution.",
+              "example": "all questions are worth the same marks"
+            }
+          ],
+          "solving_strategy": {
+            "steps": [
+              "If you can eliminate 2 options, guessing from the remaining 2-3 gives 33-50% chance"
+            ],
+            "worked_example": {
+              "question": "Which is NOT a factor of 144? A) 8, B) 9, C) 14, D) 16",
+              "steps": [
+                "If you can eliminate 2 options, guessing from the remaining 2-3 gives 33-50% chance → 144/8 = 18 ✓"
+              ],
+              "answer": "14"
+            }
+          },
+          "concept_explanation": "Techniques for maximising score on multiple-choice quantitative reasoning exams under time pressure.",
+          "common_mistakes": [
+            "Trap: Giving the answer to a DIFFERENT question than asked (e.g., finding x when asked for 2x)",
+            "Trap: Sign errors — an option with the right number but wrong sign is a distractor",
+            "Trap: Forgetting to convert units (cm vs m, seconds vs minutes)",
+            "Trap: 'None of the above' — only choose this after verifying all others are wrong",
+            "Trap: Percentage increase ≠ percentage decrease (20% up then 20% down ≠ original)"
+          ],
+          "topic_id": "sequences",
+          "identification_cues": [
+            "Any multiple-choice question where you can eliminate options without full calculation",
+            "Questions with widely spread answer options suited to estimation",
+            "Complex problems where working backwards from answer choices is faster"
+          ],
+          "related_topics": [
+            "Mental Math Speed Tricks",
+            "Arithmetic with Integers",
+            "Solving for Unknowns"
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_strategy": {
+    "before_exam_checklist": [
+      "Know all key formulas by heart",
+      "Practise doing calculations mentally — speed matters",
+      "Do timed practice papers under real conditions",
+      "Review incorrect answers to understand WHY, not just what the correct answer was"
+    ],
+    "during_exam_tips": {
+      "time_management": [
+        "Scan all questions first — attempt easy questions first",
+        "Spend no more than ~45 seconds on any single question before moving on",
+        "If stuck, eliminate wrong answers and make a best guess, then return if time allows"
+      ],
+      "reading_questions": [
+        "Underline key words: NOT, LEAST, MORE THAN, TOTAL",
+        "Check what unit the answer should be in",
+        "Re-read the question after getting an answer — did you answer what was actually asked?"
+      ],
+      "checking_answers": [
+        "Does the answer make sense in context?",
+        "Is the answer in the right ballpark? Estimate first.",
+        "Did you use the right formula?"
+      ]
+    },
+    "common_traps": [
+      {
+        "trap": "Mixing up units",
+        "example": "Finding area but giving perimeter",
+        "fix": "Re-read: area or perimeter?"
+      },
+      {
+        "trap": "Percentage of wrong base",
+        "example": "% increase using new price not original",
+        "fix": "Always % of the ORIGINAL value"
+      },
+      {
+        "trap": "Forgetting border adds to both sides",
+        "example": "Adding path width once instead of twice",
+        "fix": "A border of width w adds 2w to length AND 2w to width"
+      },
+      {
+        "trap": "Averaging speeds instead of using D÷T",
+        "example": "Average speed = (60+90)/2 = 75",
+        "fix": "Use Total Distance ÷ Total Time"
+      },
+      {
+        "trap": "'Less than' reversal",
+        "example": "'5 less than x' written as 5−x",
+        "fix": "It's x−5"
+      },
+      {
+        "trap": "Median without sorting",
+        "example": "Finding middle value of unsorted list",
+        "fix": "Always sort the list first"
+      },
+      {
+        "trap": "Not reading 'NOT' in questions",
+        "example": "Finding what IS true when asked what isn't",
+        "fix": "Circle the word NOT in the question"
+      }
+    ]
+  },
+  "quick_reference": {
+    "formula_sheet": {
+      "area": {
+        "rectangle": "l × w",
+        "square": "s²",
+        "triangle": "½ × base × height",
+        "circle": "π × r²",
+        "trapezium": "½ × (a + b) × h"
+      },
+      "perimeter": {
+        "rectangle": "2(l + w)",
+        "circle_circumference": "2 × π × r"
+      },
+      "volume": {
+        "cube": "s³",
+        "rectangular_prism": "l × w × h",
+        "cylinder": "π × r² × h"
+      },
+      "speed_distance_time": {
+        "distance": "Speed × Time",
+        "speed": "Distance ÷ Time",
+        "time": "Distance ÷ Speed"
+      },
+      "statistics": {
+        "mean": "Sum of values ÷ Count",
+        "range": "Maximum − Minimum",
+        "probability": "Favourable outcomes ÷ Total outcomes"
+      },
+      "percentage": {
+        "of_amount": "(P ÷ 100) × amount",
+        "change": "(change ÷ original) × 100",
+        "increase_by_x_percent": "original × (1 + X/100)",
+        "decrease_by_x_percent": "original × (1 − X/100)"
+      },
+      "venn_diagram": {
+        "union": "n(A) + n(B) − n(A∩B)"
+      }
+    },
+    "perfect_squares": [
+      1,
+      4,
+      9,
+      16,
+      25,
+      36,
+      49,
+      64,
+      81,
+      100,
+      121,
+      144,
+      169,
+      196,
+      225
+    ],
+    "perfect_cubes": [
+      1,
+      8,
+      27,
+      64,
+      125,
+      216,
+      343,
+      512,
+      729,
+      1000
+    ],
+    "square_roots": {
+      "√4": 2,
+      "√9": 3,
+      "√16": 4,
+      "√25": 5,
+      "√36": 6,
+      "√49": 7,
+      "√64": 8,
+      "√81": 9,
+      "√100": 10,
+      "√121": 11,
+      "√144": 12
+    }
+  }
+}

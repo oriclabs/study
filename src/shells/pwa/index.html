@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study — learn by watching it solved</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#12141c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=OpenDyslexic&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Study</h1>
+      <div class="subtitle">Learn by watching it solved — step by step, in handwriting.</div>
+      <div class="game-hud" id="game-hud" aria-live="polite">
+        <span class="hud-item"><span class="hud-label">Lvl</span> <strong id="hud-level">1</strong></span>
+        <span class="hud-item"><span class="hud-label">XP</span> <strong id="hud-xp">0</strong></span>
+        <span class="hud-item"><span class="hud-label">Streak</span> <strong id="hud-streak">0</strong>🔥</span>
+      </div>
+    </header>
+
+    <main class="app">
+      <aside class="sidebar" aria-label="Controls">
+        <section>
+          <label for="curriculum-select">Curriculum</label>
+          <select id="curriculum-select"></select>
+          <div id="curriculum-info" class="curriculum-info muted"></div>
+        </section>
+        <section>
+          <label for="subject-select">Subject</label>
+          <select id="subject-select"></select>
+        </section>
+        <section>
+          <label for="lesson-select">Lesson</label>
+          <select id="lesson-select"></select>
+          <button id="play-btn" class="primary">▶ Play lesson</button>
+        </section>
+
+        <section>
+          <label for="custom-input">Or type your own equation</label>
+          <input id="custom-input" type="text" placeholder="e.g. 2x² + 5x − 3 = 0" />
+          <div class="button-row">
+            <button id="solve-btn">Quick solve</button>
+            <button id="strategies-btn" class="primary">Pick a method →</button>
+          </div>
+        </section>
+
+        <section class="controls">
+          <button id="pause-btn" disabled>⏸ Pause</button>
+          <button id="reset-btn">↺ Reset</button>
+          <button id="export-btn">⬇ PNG</button>
+        </section>
+
+        <section>
+          <label for="speed">Speed <span id="speed-val">1.0x</span></label>
+          <input id="speed" type="range" min="0.5" max="3" step="0.1" value="1" />
+        </section>
+        <section>
+          <label for="theme">Theme</label>
+          <select id="theme">
+            <option value="whiteboard">Whiteboard</option>
+            <option value="chalkboard">Chalkboard</option>
+            <option value="marker">Marker</option>
+          </select>
+        </section>
+        <section>
+          <label>
+            <span>Voice narration</span>
+            <input id="voice-toggle" type="checkbox" />
+          </label>
+        </section>
+
+        <section class="a11y">
+          <label>Accessibility</label>
+          <label class="check-row"><input id="a11y-dyslexia" type="checkbox" /> Dyslexia font</label>
+          <label class="check-row"><input id="a11y-contrast" type="checkbox" /> High contrast</label>
+          <label class="check-row"><input id="a11y-motion" type="checkbox" /> Reduced motion</label>
+          <label class="check-row"><input id="a11y-large" type="checkbox" /> Larger text</label>
+        </section>
+
+        <section class="stats">
+          <label>Your progress</label>
+          <div id="stats-summary" class="stats-summary">No attempts yet.</div>
+        </section>
+
+        <section class="controls">
+          <button id="dashboard-btn">📊 Report</button>
+          <button id="worksheet-btn">🖨 Worksheet</button>
+          <button id="exam-btn">📝 Exam mode</button>
+          <button id="content-btn">📚 Content</button>
+          <button id="notes-btn">📓 Notes</button>
+        </section>
+      </aside>
+
+      <div id="notes-modal" class="modal-backdrop" hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-label="Study notes">
+          <div class="modal-header">
+            <h2>Study Notes</h2>
+            <button id="notes-close" aria-label="Close">✕</button>
+          </div>
+          <div class="modal-controls">
+            <label for="notes-subject">Subject</label>
+            <select id="notes-subject"></select>
+            <label for="notes-topic">Topic</label>
+            <select id="notes-topic">
+              <option value="">(whole subject)</option>
+            </select>
+          </div>
+          <div id="notes-body" class="notes-body"></div>
+          <div class="modal-footer">
+            <button id="notes-print-btn" class="primary">🖨 Print / Save as PDF</button>
+            <button id="notes-download-btn">⬇ Download HTML</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="content-modal" class="modal-backdrop" hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-label="Manage content">
+          <div class="modal-header">
+            <h2>Manage Content</h2>
+            <button id="content-close" aria-label="Close">✕</button>
+          </div>
+          <div class="content-tabs">
+            <button class="content-tab active" data-tab="browse">Browse</button>
+            <button class="content-tab" data-tab="import">Import</button>
+            <button class="content-tab" data-tab="export">Export</button>
+          </div>
+
+          <div class="content-tab-panel" id="content-panel-browse">
+            <div class="content-summary muted small" id="content-summary"></div>
+            <div class="content-list" id="content-list"></div>
+          </div>
+
+          <div class="content-tab-panel" id="content-panel-import" hidden>
+            <p class="muted small">
+              Paste a lesson JSON, or a JSON array of lessons. You can also upload a .json file.
+              Generated output from <code>npm run generate:content</code> lands in
+              <code>content/_generated/</code> — open those files and paste here.
+            </p>
+            <div class="content-import-controls">
+              <input id="content-file-input" type="file" accept="application/json,.json" multiple />
+              <button id="content-file-btn" class="primary">Choose JSON file(s)</button>
+            </div>
+            <label class="content-label small muted">Or paste JSON here</label>
+            <textarea
+              id="content-import-textarea"
+              rows="12"
+              placeholder='Paste a single lesson { "schemaVersion": 1, ... } or an array [ { ... }, { ... } ]'
+            ></textarea>
+            <label class="content-row small muted">
+              <input id="content-overwrite" type="checkbox" />
+              Overwrite lessons with the same id
+            </label>
+            <div class="content-actions">
+              <button id="content-import-btn" class="primary">Import</button>
+              <button id="content-clear-textarea-btn">Clear</button>
+            </div>
+            <div id="content-import-result" class="content-result" hidden></div>
+          </div>
+
+          <div class="content-tab-panel" id="content-panel-export" hidden>
+            <p class="muted small">
+              Export your imported lessons as a single JSON file. Useful for backup or sharing.
+              Built-in lessons are not included — they're already in the codebase.
+            </p>
+            <div class="content-actions">
+              <button id="content-export-btn" class="primary">Download all user content</button>
+              <button id="content-clear-all-btn" class="danger">Delete all user content</button>
+            </div>
+            <div id="content-export-result" class="content-result" hidden></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mastery-modal" class="modal-backdrop" hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-label="Mastery dashboard">
+          <div class="modal-header">
+            <h2 id="mastery-title">Mastery Dashboard</h2>
+            <button id="mastery-close" aria-label="Close">✕</button>
+          </div>
+          <div class="modal-controls">
+            <label for="mastery-curriculum">View curriculum</label>
+            <select id="mastery-curriculum"></select>
+          </div>
+          <div id="mastery-summary" class="mastery-summary"></div>
+          <div id="mastery-units" class="mastery-units"></div>
+          <div class="modal-footer">
+            <button id="mastery-export-html">Export full HTML report</button>
+            <button id="mastery-export-json">Export JSON</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-col">
+        <div class="canvas-wrap">
+          <canvas id="whiteboard" width="900" height="900" aria-label="Lesson whiteboard"></canvas>
+        </div>
+
+        <section id="strategy-panel" class="practice-panel" hidden aria-label="Strategy picker">
+          <div class="practice-header">
+            <h2>Choose a method</h2>
+            <span id="strategy-problem-info" class="muted"></span>
+          </div>
+          <div id="strategy-problem-echo" class="practice-prompt"></div>
+          <div class="ranking-modes" role="radiogroup" aria-label="Ranking mode">
+            <label class="ranking-mode">
+              <input type="radio" name="ranking-mode" value="fastest" checked />
+              <span>⚡ Fastest</span>
+            </label>
+            <label class="ranking-mode">
+              <input type="radio" name="ranking-mode" value="most-general" />
+              <span>🌐 General</span>
+            </label>
+            <label class="ranking-mode">
+              <input type="radio" name="ranking-mode" value="builds-understanding" />
+              <span>🧠 Deepest</span>
+            </label>
+            <label class="ranking-mode">
+              <input type="radio" name="ranking-mode" value="for-me" />
+              <span>🎯 For me</span>
+            </label>
+          </div>
+          <div id="strategy-list" class="strategy-list"></div>
+          <div class="practice-actions">
+            <button id="strategy-explain-btn">Why multiple methods?</button>
+            <button id="strategy-play-btn" class="primary" disabled>▶ Play selected</button>
+            <button id="strategy-cancel-btn">Cancel</button>
+          </div>
+        </section>
+
+        <section id="practice-panel" class="practice-panel" hidden aria-label="Practice">
+          <div class="practice-header">
+            <h2>Practice</h2>
+            <span id="practice-progress" class="muted"></span>
+          </div>
+          <div id="practice-prompt" class="practice-prompt"></div>
+
+          <div id="practice-input-wrap">
+            <div id="practice-choices" class="choices" hidden></div>
+            <input id="practice-answer" type="text" placeholder="Your answer" />
+          </div>
+
+          <div class="practice-actions">
+            <button id="check-btn" class="primary">Check answer</button>
+            <button id="hint-btn">Hint</button>
+            <button id="next-q-btn" disabled>Next question →</button>
+          </div>
+
+          <div id="practice-hint" class="feedback hint" hidden></div>
+          <div id="practice-feedback" class="feedback" hidden></div>
+        </section>
+
+        <section id="exam-panel" class="practice-panel" hidden aria-label="Exam">
+          <div class="practice-header">
+            <h2>Exam mode</h2>
+            <span id="exam-timer" class="muted"></span>
+          </div>
+          <div id="exam-body"></div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
