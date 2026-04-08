@@ -33,7 +33,10 @@ function normalizeUnicode(s: string): string {
     .replace(/\u00B9/g, '^1')  // ¹
     .replace(/\u2074/g, '^4')  // ⁴
     .replace(/\u2075/g, '^5')  // ⁵
-    .replace(/\u207B/g, '-');  // superscript minus
+    .replace(/\u207B/g, '-')   // superscript minus
+    .replace(/\u00B0/g, ' degrees ')  // degree symbol °
+    .replace(/\u03C0/g, 'pi')  // π
+    .replace(/\u221A/g, 'sqrt'); // √
 }
 
 export function identify(input: string): Problem | null {
@@ -437,7 +440,7 @@ function parseSimSide(src: string): { a: number; b: number; c: number } | null {
 // ─── Quadratic / Linear / Expression ─────────────────────────────
 
 function identifyQuadratic(input: string): Problem | null {
-  if (!/x\s*\^\s*2|x²/.test(input)) return null;
+  if (!/x\s*\^\s*2/.test(input)) return null;
   const coeffs = parseQuadratic(input);
   if (!coeffs) return null;
   return { type: 'quadratic', subject: 'math', rawInput: input, coefficients: { a: coeffs.a, b: coeffs.b, c: coeffs.c }, goal: 'solve for x', confidence: 1.0, topic: 'algebra.quadratics' };
@@ -456,7 +459,7 @@ function identifyGraph(input: string): Problem | null {
   const s = input.toLowerCase().replace(/\s+/g, ' ').replace(/\u2212/g, '-').replace(/\u00D7/g, '*');
 
   // Normalize expression helper
-  const normExpr = (e: string) => e.trim().replace(/²/g, '^2').replace(/³/g, '^3').replace(/\u2212/g, '-');
+  const normExpr = (e: string) => e.trim();
 
   // "sketch y = x² - 4" or "graph y = 2x + 3" or "plot y = ..."
   const sketchMatch = s.match(/(?:sketch|graph|plot|draw)\s+y\s*=\s*(.+?)(?:\.|$|where|find|how)/);
@@ -513,57 +516,59 @@ function identifyPythagoras(input: string): Problem | null {
 
 function identifyTrig(input: string): Problem | null {
   const s = input.toLowerCase().replace(/\s+/g, ' ');
+  // Preserve original case for angle (A,B,C) vs side (a,b,c) distinction
+  const original = input.replace(/\s+/g, ' ');
 
-  // Sine rule: "Triangle: A = 40°, B = 65°, a = 10. Find b"
-  // Matches patterns with named angles (A, B, C) and sides (a, b, c)
-  const sineRule = s.match(/triangle.*?([abc])\s*=\s*(\d+\.?\d*)\s*(?:\u00B0|degrees?|deg).*?([abc])\s*=\s*(\d+\.?\d*)\s*(?:\u00B0|degrees?|deg).*?([abc])\s*=\s*(\d+\.?\d*).*?find\s+([abc])/);
-  if (sineRule) {
-    const known: Record<string, number> = {};
-    known[sineRule[1]!] = parseFloat(sineRule[2]!);
-    known[sineRule[3]!] = parseFloat(sineRule[4]!);
-    known[sineRule[5]!] = parseFloat(sineRule[6]!);
-    const find = sineRule[7]!;
-    // Determine if angles are uppercase (A,B,C) or lowercase represents sides
-    // Convention: uppercase = angles, lowercase = sides
-    return { type: 'sine-rule', subject: 'math', rawInput: input, inputs: { known, find }, goal: `find ${find}`, confidence: 1.0, topic: 'geometry.triangles' };
-  }
-
-  // Also catch: "A=40° B=65° a=10 find b" without "Triangle:" prefix
+  // Extract angle assignments: A = 40° or A=40 degrees (UPPERCASE = angles)
+  // After normalization: ° becomes " degrees ", ² becomes "^2"
   const angles: Record<string, number> = {};
-  const sides: Record<string, number> = {};
-  let findVar = '';
-
-  // Extract angle assignments: A = 40° or A=40 degrees
-  const angleRe = /([A-C])\s*=\s*(\d+\.?\d*)\s*(?:\u00B0|degrees?|deg)/gi;
+  const angleRe = /([A-C])\s*=\s*(\d+\.?\d*)\s*(?:\u00B0|degrees?|deg|°)?\s*,?/g;
   let am: RegExpExecArray | null;
-  while ((am = angleRe.exec(s)) !== null) {
-    angles[am[1]!.toUpperCase()] = parseFloat(am[2]!);
+  while ((am = angleRe.exec(original)) !== null) {
+    angles[am[1]!] = parseFloat(am[2]!);
   }
-  // Extract side assignments: a = 10 cm or a=10
-  const sideRe = /\b([a-c])\s*=\s*(\d+\.?\d*)\s*(?:cm|m|mm)?/gi;
+
+  // Extract side assignments: a = 10 cm or a=10 (lowercase = sides)
+  const sides: Record<string, number> = {};
+  const sideRe = /\b([a-c])\s*=\s*(\d+\.?\d*)\s*(?:cm|m|mm|km)?/g;
   let sm: RegExpExecArray | null;
-  while ((sm = sideRe.exec(s)) !== null) {
-    if (!angles[sm[1]!.toUpperCase()]) { // don't confuse with angle if same letter already used as angle
-      sides[sm[1]!.toLowerCase()] = parseFloat(sm[2]!);
-    }
+  while ((sm = sideRe.exec(original)) !== null) {
+    sides[sm[1]!] = parseFloat(sm[2]!);
   }
-  // Extract "find b" or "find B"
-  const findMatch = s.match(/find\s+([a-cA-C])/);
+
+  // Extract "find b" or "Find B"
+  let findVar = '';
+  const findMatch = original.match(/[Ff]ind\s+([a-cA-C])/);
   if (findMatch) findVar = findMatch[1]!;
 
+  // Sine rule: 2+ angles + 1+ side + find variable
   if (Object.keys(angles).length >= 2 && Object.keys(sides).length >= 1 && findVar) {
     return { type: 'sine-rule', subject: 'math', rawInput: input, inputs: { angles, sides, find: findVar }, goal: `find ${findVar}`, confidence: 1.0, topic: 'geometry.triangles' };
   }
 
-  // Cosine rule: "a=5, b=7, C=60°, find c" — two sides + included angle → find third side
+  // Sine rule: 1 angle + 1 side with matching letter + find different side
+  if (Object.keys(angles).length >= 1 && Object.keys(sides).length >= 1 && findVar) {
+    // Check if we have a matching pair (e.g., A and a)
+    const hasMatch = Object.keys(angles).some(ak => sides[ak.toLowerCase()] !== undefined);
+    if (hasMatch) {
+      return { type: 'sine-rule', subject: 'math', rawInput: input, inputs: { angles, sides, find: findVar }, goal: `find ${findVar}`, confidence: 0.9, topic: 'geometry.triangles' };
+    }
+  }
+
+  // Cosine rule: 2+ sides + 1+ angle + find variable
   if (Object.keys(sides).length >= 2 && Object.keys(angles).length >= 1 && findVar) {
     return { type: 'cosine-rule', subject: 'math', rawInput: input, inputs: { angles, sides, find: findVar }, goal: `find ${findVar}`, confidence: 1.0, topic: 'geometry.triangles' };
   }
 
+  // Cosine rule: 3 sides, find angle
+  if (Object.keys(sides).length >= 3 && findVar && findVar === findVar.toUpperCase()) {
+    return { type: 'cosine-rule', subject: 'math', rawInput: input, inputs: { angles, sides, find: findVar }, goal: `find ${findVar}`, confidence: 1.0, topic: 'geometry.triangles' };
+  }
+
   // "sin 30", "cos(45)", "tan 60 degrees"
-  const evalTrig = s.match(/^(sin|cos|tan)\s*\(?(\d+\.?\d*)\)?\s*(degrees?|deg|\u00B0|rad|radians)?$/);
+  const evalTrig = s.match(/^(sin|cos|tan)\s*\(?(\d+\.?\d*)\)?\s*(degrees?|deg|rad|radians)?$/);
   if (evalTrig) {
-    const unit = (!evalTrig[3] || /deg|\u00B0/.test(evalTrig[3])) ? 'degrees' : 'radians';
+    const unit = (!evalTrig[3] || /deg/.test(evalTrig[3])) ? 'degrees' : 'radians';
     return { type: 'trig', subject: 'math', rawInput: input, inputs: { type: 'evaluate', fn: evalTrig[1]!, angle: parseFloat(evalTrig[2]!), unit }, goal: 'evaluate', confidence: 1.0, topic: 'geometry.triangles' };
   }
 
@@ -775,10 +780,10 @@ function identifyFactorise(input: string): Problem | null {
 // ─── Cubic ───────────────────────────────────────────────────────
 
 function identifyCubic(input: string): Problem | null {
-  if (!/x\s*\^\s*3|x³/.test(input)) return null;
+  if (!/x\s*\^\s*3/.test(input)) return null;
   if (!input.includes('=')) return null;
 
-  const cleaned = input.replace(/\s+/g, '').toLowerCase().replace(/³/g, '^3').replace(/²/g, '^2');
+  const cleaned = input.replace(/\s+/g, '').toLowerCase();
   const sides = cleaned.split('=');
   if (sides.length !== 2) return null;
 

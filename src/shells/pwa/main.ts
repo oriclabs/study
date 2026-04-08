@@ -77,6 +77,7 @@ async function main() {
 
   // Content pack manager + progress tracker (IndexedDB-backed)
   const packManager = new ContentPackManager(platform.storage);
+  await packManager.preloadDefaults();
   const studyProgress = new StudyProgress(platform.storage);
 
   // Pen cursor (shared across all solver instances)

@@ -1,0 +1,262 @@
+{
+  "packId": "pack:vic-curriculum",
+  "packVersion": 1,
+  "exam": "Victorian Curriculum F-10",
+  "description": "Victorian Curriculum (VCAA) — English and Science for Levels 7-10. Aligned to curriculum content descriptions.",
+  "subjects": [
+    {
+      "id": "english",
+      "label": "English",
+      "notes": {
+        "exam": {
+          "name": "Victorian Curriculum",
+          "subject": "English",
+          "version": "2.0",
+          "description": "English curriculum covering Language, Literature and Literacy strands for Levels 7-10."
+        },
+        "categories": [
+          {
+            "title": "Language — Reading & Viewing",
+            "topics": [
+              {
+                "id": "ENG-LRV-01", "title": "Language for Interaction", "topic_id": "english.language.interaction",
+                "concept_explanation": "Understanding how language is used to evaluate texts and how evaluations can be substantiated by reference to the text and other sources.",
+                "key_points": ["Evaluative language", "Formal vs informal register", "Persuasive language choices", "Modality — degrees of certainty"],
+                "examples": [
+                  { "question": "Identify the evaluative language in: 'The stunning performance captivated the audience, making it a truly remarkable evening.'", "solution_steps": ["'stunning' — positive adjective (evaluation)", "'captivated' — strong verb showing effect", "'truly remarkable' — intensifier + evaluative adjective"], "answer": "stunning, captivated, truly remarkable — all positive evaluative choices", "difficulty": 1 },
+                  { "question": "Rewrite in formal register: 'The movie was awesome and everyone loved it.'", "solution_steps": ["Replace slang 'awesome' with formal equivalent", "Replace vague 'everyone' with specific", "Add evaluative precision"], "answer": "The film was exceptionally well-crafted and was widely acclaimed by audiences.", "difficulty": 2 }
+                ]
+              },
+              {
+                "id": "ENG-LRV-02", "title": "Text Structure and Organisation", "topic_id": "english.language.structure",
+                "concept_explanation": "Understanding how text structures and language features become more complex in informative and persuasive texts. Identifying structures like taxonomies, cause and effect, and extended metaphors.",
+                "key_points": ["Topic sentences and paragraph structure", "Cohesive devices (conjunctions, referencing)", "Text connectives for argument flow", "How authors guide readers through texts"],
+                "examples": [
+                  { "question": "What is the purpose of a topic sentence in an informative paragraph?", "solution_steps": ["A topic sentence introduces the main idea of the paragraph", "It tells the reader what the paragraph will be about", "Supporting sentences then provide evidence/detail"], "answer": "The topic sentence states the main idea, guiding the reader and providing structure for the paragraph.", "difficulty": 1 },
+                  { "question": "Identify the text structure: 'Due to deforestation, many species lost their habitats. As a result, biodiversity declined sharply.'", "solution_steps": ["'Due to' signals a cause", "'As a result' signals an effect", "This is cause and effect structure"], "answer": "Cause and effect — deforestation (cause) → habitat loss → biodiversity decline (effects)", "difficulty": 2 }
+                ]
+              },
+              {
+                "id": "ENG-LRV-03", "title": "Expressing and Developing Ideas", "topic_id": "english.language.expression",
+                "concept_explanation": "Analysing how point of view is generated in visual texts through choices like gaze, angle and social distance. Understanding abstract nouns and specialised vocabulary.",
+                "key_points": ["Visual literacy — camera angles, framing", "Abstract nouns build specialised knowledge", "Nominalisation — turning verbs into nouns", "Technical and subject-specific vocabulary"],
+                "examples": [
+                  { "question": "How does a low camera angle affect the viewer's perception of a character?", "solution_steps": ["Low angle = camera looks up at the subject", "This makes the subject appear larger/more powerful", "Conveys authority, dominance, or importance"], "answer": "A low angle makes the character appear powerful, dominant, or important by forcing the viewer to look up at them.", "difficulty": 2 }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Literature",
+            "topics": [
+              {
+                "id": "ENG-LIT-01", "title": "Responding to Literature", "topic_id": "english.literature.responding",
+                "concept_explanation": "Comparing how language and images create character and influence emotions. Discussing aesthetic and social value of texts using metalanguage.",
+                "key_points": ["Character analysis", "Identifying stereotypes and bias", "Aesthetic vs social value", "Using metalanguage to discuss texts"],
+                "examples": [
+                  { "question": "What is the difference between a flat character and a round character?", "solution_steps": ["Flat character: simple, one-dimensional, predictable", "Round character: complex, multi-faceted, develops over time", "Round characters are more realistic and engaging"], "answer": "A flat character has one or two traits and is predictable. A round character is complex, has depth, and changes throughout the story.", "difficulty": 1 },
+                  { "question": "How can a text have both aesthetic and social value?", "solution_steps": ["Aesthetic value: beautiful language, imagery, structure", "Social value: addresses issues, promotes understanding", "A novel like 'To Kill a Mockingbird' has both: beautiful prose AND addresses racism"], "answer": "Aesthetic value comes from language craft and style; social value comes from addressing real-world issues. Many great texts combine both.", "difficulty": 2 }
+                ]
+              },
+              {
+                "id": "ENG-LIT-02", "title": "Examining Literature", "topic_id": "english.literature.examining",
+                "concept_explanation": "Recognising how characterisation, events and settings combine in narratives. Understanding how language is compressed in film/drama and creates layers of meaning in poetry.",
+                "key_points": ["Narrative conventions: plot, setting, character", "Literary devices: metaphor, simile, symbolism", "Poetry: rhythm, rhyme, imagery", "Film techniques: montage, lighting, sound"],
+                "examples": [
+                  { "question": "Identify the literary device: 'The wind whispered through the ancient trees.'", "solution_steps": ["The wind is given a human action — 'whispered'", "Non-human things given human qualities = personification"], "answer": "Personification — the wind is given the human ability to whisper.", "difficulty": 1 },
+                  { "question": "What effect does the metaphor 'Life is a journey' create?", "solution_steps": ["Compares life to a journey without using 'like' or 'as'", "Implies progress, direction, obstacles", "Creates meaning about experiences and growth"], "answer": "It implies life has a direction, involves challenges and milestones, and suggests personal growth — making abstract experience concrete.", "difficulty": 2 }
+                ]
+              },
+              {
+                "id": "ENG-LIT-03", "title": "Creating Literature", "topic_id": "english.literature.creating",
+                "concept_explanation": "Using personal knowledge and literary texts as starting points to create imaginative writing in different forms and genres.",
+                "key_points": ["Narrative writing techniques", "Show don't tell", "Dialogue conventions", "Creating atmosphere through word choice"],
+                "examples": [
+                  { "question": "Rewrite using 'show don't tell': 'Sarah was scared.'", "solution_steps": ["Don't state the emotion directly", "Show physical reactions and behaviours", "Use sensory details"], "answer": "Sarah's hands trembled as she pressed her back against the cold wall, her breath coming in short, ragged gasps.", "difficulty": 2 }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Literacy",
+            "topics": [
+              {
+                "id": "ENG-LIT-04", "title": "Interpreting, Analysing, Evaluating", "topic_id": "english.literacy.interpreting",
+                "concept_explanation": "Using comprehension strategies to interpret, analyse and synthesise ideas from a variety of textual sources.",
+                "key_points": ["Prior knowledge and prediction", "Inference and deduction", "Synthesising information across texts", "Evaluating reliability of sources"],
+                "examples": [
+                  { "question": "What is the difference between an inference and a stated fact?", "solution_steps": ["Stated fact: directly written in the text", "Inference: conclusion drawn from evidence + reasoning", "Inference requires 'reading between the lines'"], "answer": "A stated fact is explicitly written in the text. An inference is a logical conclusion you draw from clues in the text combined with your own knowledge.", "difficulty": 1 }
+                ]
+              },
+              {
+                "id": "ENG-LIT-05", "title": "Creating Texts", "topic_id": "english.literacy.creating",
+                "concept_explanation": "Creating spoken, written and multimodal texts for different purposes and audiences. Editing for meaning and effect.",
+                "key_points": ["Planning and structuring texts", "Audience awareness", "Editing and proofreading", "Multimodal composition"],
+                "examples": [
+                  { "question": "What should you consider when writing for a teenage audience vs an adult audience?", "solution_steps": ["Vocabulary: simpler/relatable vs more formal", "Tone: casual/engaging vs authoritative", "References: pop culture vs professional/historical", "Length: shorter/punchy vs detailed"], "answer": "For teenagers: use relatable language, engaging tone, contemporary references. For adults: use more formal vocabulary, measured tone, and detailed evidence.", "difficulty": 2 }
+                ]
+              },
+              {
+                "id": "ENG-LIT-06", "title": "Grammar and Punctuation", "topic_id": "english.literacy.grammar",
+                "concept_explanation": "Understanding punctuation and grammar in complex sentences. Combining clauses, using prepositional phrases, and applying correct conventions.",
+                "key_points": ["Complex sentences with subordinate clauses", "Semicolons, colons, dashes", "Subject-verb agreement", "Active vs passive voice"],
+                "examples": [
+                  { "question": "Combine using a subordinate clause: 'The students studied hard. They passed the exam.'", "solution_steps": ["Identify the relationship: cause → effect", "Use subordinating conjunction: 'because', 'since', 'as'", "Combine: 'Because the students studied hard, they passed the exam.'"], "answer": "Because the students studied hard, they passed the exam.", "difficulty": 1 },
+                  { "question": "Convert to passive voice: 'The scientist discovered a new species.'", "solution_steps": ["Active: subject (scientist) does the action", "Passive: object becomes subject, verb becomes 'was + past participle'", "'A new species was discovered by the scientist.'"], "answer": "A new species was discovered by the scientist.", "difficulty": 2 }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Speaking and Listening",
+            "topics": [
+              {
+                "id": "ENG-SL-01", "title": "Oral Presentations and Discussions", "topic_id": "english.speaking.presentations",
+                "concept_explanation": "Planning, rehearsing and delivering presentations. Using voice, body language and visual aids effectively.",
+                "key_points": ["Structure: introduction, body, conclusion", "Eye contact and body language", "Voice projection and pace", "Using evidence to support arguments"],
+                "examples": [
+                  { "question": "List three techniques for an effective oral presentation.", "solution_steps": ["1. Eye contact — connect with audience", "2. Varied pace — slow for emphasis, faster for energy", "3. Structured argument — clear introduction, evidence, conclusion"], "answer": "Eye contact, varied pace and tone, and a clear structure with evidence.", "difficulty": 1 }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "practice": [],
+      "mockExams": []
+    },
+    {
+      "id": "science",
+      "label": "Science",
+      "notes": {
+        "exam": {
+          "name": "Victorian Curriculum",
+          "subject": "Science",
+          "version": "2.0",
+          "description": "Science curriculum covering Biological, Chemical, Earth & Space, and Physical sciences for Levels 7-10."
+        },
+        "categories": [
+          {
+            "title": "Biological Sciences",
+            "topics": [
+              {
+                "id": "SCI-BIO-01", "title": "Classification and Diversity", "topic_id": "science.biology.classification",
+                "concept_explanation": "There are differences within and between groups of organisms. Classification helps organise this diversity using hierarchical systems.",
+                "key_points": ["Kingdom, Phylum, Class, Order, Family, Genus, Species", "Binomial naming: Genus species", "Vertebrates vs invertebrates", "Features used for classification"],
+                "examples": [
+                  { "question": "Put these classification levels in order from broadest to most specific: Class, Species, Kingdom, Family, Genus, Order, Phylum", "solution_steps": ["Kingdom (broadest)", "Phylum", "Class", "Order", "Family", "Genus", "Species (most specific)", "Remember: King Philip Came Over For Good Spaghetti"], "answer": "Kingdom → Phylum → Class → Order → Family → Genus → Species", "difficulty": 1 }
+                ]
+              },
+              {
+                "id": "SCI-BIO-02", "title": "Cells — Structure and Function", "topic_id": "science.biology.cells",
+                "concept_explanation": "Cells are the basic units of living things. They have specialised structures (organelles) and functions. Plant and animal cells differ.",
+                "key_points": ["Nucleus: contains DNA", "Cell membrane: controls what enters/exits", "Mitochondria: energy production (respiration)", "Plant cells: cell wall, chloroplasts, large vacuole"],
+                "examples": [
+                  { "question": "Compare plant and animal cells — name 3 differences.", "solution_steps": ["1. Cell wall: plant cells have rigid cell wall, animal cells don't", "2. Chloroplasts: plant cells have them (photosynthesis), animal cells don't", "3. Vacuole: plant cells have one large central vacuole, animal cells have small ones or none"], "answer": "Plant cells have: cell wall, chloroplasts, large central vacuole. Animal cells lack these.", "difficulty": 1 },
+                  { "question": "Why are mitochondria called the 'powerhouse of the cell'?", "solution_steps": ["Mitochondria carry out cellular respiration", "Glucose + oxygen → carbon dioxide + water + energy (ATP)", "They convert food energy into usable energy (ATP)"], "answer": "Mitochondria convert glucose into ATP (energy) through cellular respiration — they produce the cell's energy supply.", "difficulty": 1 }
+                ]
+              },
+              {
+                "id": "SCI-BIO-03", "title": "Food Chains, Webs and Ecosystems", "topic_id": "science.biology.ecosystems",
+                "concept_explanation": "Interactions between organisms can be described as food chains and food webs. Human activity can affect these interactions.",
+                "key_points": ["Producer → primary consumer → secondary consumer → tertiary consumer", "Only ~10% of energy transfers to next level", "Decomposers recycle nutrients", "Human impacts: deforestation, pollution, introduced species"],
+                "examples": [
+                  { "question": "In a food web, what would happen if all the frogs were removed?", "solution_steps": ["Frogs eat insects → insect population would increase", "Frogs are eaten by snakes → snake population would decrease", "Increased insects could damage crops/plants", "This shows interconnectedness of food webs"], "answer": "Insect populations would increase (no predator), snake populations would decrease (less food), and there would be cascading effects throughout the ecosystem.", "difficulty": 2 }
+                ]
+              },
+              {
+                "id": "SCI-BIO-04", "title": "Body Systems", "topic_id": "science.biology.bodysystems",
+                "concept_explanation": "Multicellular organisms contain systems of organs that carry out specialised functions for survival and reproduction.",
+                "key_points": ["Digestive system: breaks down food", "Circulatory system: transports blood/nutrients", "Respiratory system: gas exchange", "Nervous system: coordinates responses"],
+                "examples": [
+                  { "question": "Trace the path of food through the digestive system.", "solution_steps": ["Mouth: mechanical + chemical digestion (teeth + saliva/amylase)", "Oesophagus: peristalsis moves food to stomach", "Stomach: acid + pepsin breaks down protein", "Small intestine: most absorption occurs (villi)", "Large intestine: absorbs water", "Rectum → anus: waste eliminated"], "answer": "Mouth → oesophagus → stomach → small intestine (absorption) → large intestine (water) → rectum → anus", "difficulty": 2 }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Chemical Sciences",
+            "topics": [
+              {
+                "id": "SCI-CHM-01", "title": "Mixtures and Separation", "topic_id": "science.chemistry.mixtures",
+                "concept_explanation": "Mixtures contain combinations of pure substances that can be separated using physical techniques based on different properties.",
+                "key_points": ["Pure substance vs mixture", "Solute + solvent = solution", "Separation: filtration, evaporation, distillation, chromatography", "Based on physical properties (boiling point, solubility, particle size)"],
+                "examples": [
+                  { "question": "How would you separate sand from salt water?", "solution_steps": ["Step 1: Filtration — sand is insoluble, trapped by filter paper", "Step 2: Evaporation — heat the salt water", "Step 3: Salt crystals remain as water evaporates"], "answer": "Filtration to remove sand, then evaporation to recover salt from the solution.", "difficulty": 1 }
+                ]
+              },
+              {
+                "id": "SCI-CHM-02", "title": "Particle Model of Matter", "topic_id": "science.chemistry.particles",
+                "concept_explanation": "The properties of solids, liquids and gases can be explained by the motion and arrangement of particles.",
+                "key_points": ["Solids: particles close, vibrate, fixed shape", "Liquids: particles close, slide past each other, takes shape of container", "Gases: particles far apart, move freely, fill container", "Adding energy increases particle motion"],
+                "examples": [
+                  { "question": "Using the particle model, explain why gases are compressible but liquids are not.", "solution_steps": ["Gas particles are far apart with lots of empty space", "When compressed, particles move closer together into the empty space", "Liquid particles are already close together", "No empty space to compress into"], "answer": "Gas particles have large spaces between them that can be compressed. Liquid particles are already closely packed with minimal space, so they resist compression.", "difficulty": 2 }
+                ]
+              },
+              {
+                "id": "SCI-CHM-03", "title": "Elements, Compounds and Chemical Reactions", "topic_id": "science.chemistry.reactions",
+                "concept_explanation": "Elements combine to form compounds. Chemical reactions involve rearranging atoms to form new substances with different properties.",
+                "key_points": ["Element: one type of atom", "Compound: two or more elements chemically bonded", "Chemical reaction signs: colour change, gas produced, temperature change", "Conservation of mass: atoms rearranged, not created/destroyed"],
+                "examples": [
+                  { "question": "What is the difference between an element, a compound and a mixture?", "solution_steps": ["Element: made of only one type of atom (e.g., O₂)", "Compound: two or more elements chemically bonded (e.g., H₂O)", "Mixture: substances physically combined, not bonded (e.g., salt water)"], "answer": "Element = one atom type. Compound = different atoms chemically bonded. Mixture = substances physically combined (can be separated).", "difficulty": 1 }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Earth and Space Sciences",
+            "topics": [
+              {
+                "id": "SCI-EAS-01", "title": "Earth's Resources and Sustainability", "topic_id": "science.earth.resources",
+                "concept_explanation": "Some of Earth's resources are renewable and some are non-renewable. Human activity can affect the availability and quality of resources.",
+                "key_points": ["Renewable: solar, wind, water, biomass", "Non-renewable: fossil fuels, minerals", "Sustainability: using resources without depleting them", "Human impact: climate change, pollution, deforestation"],
+                "examples": [
+                  { "question": "Why are fossil fuels considered non-renewable?", "solution_steps": ["Fossil fuels formed over millions of years from dead organisms", "We use them much faster than they form", "Once depleted, they cannot be replaced in human timescales"], "answer": "Fossil fuels take millions of years to form but are consumed rapidly. They cannot be replenished within human lifetimes, making them non-renewable.", "difficulty": 1 }
+                ]
+              },
+              {
+                "id": "SCI-EAS-02", "title": "Rock Cycle and Geological Change", "topic_id": "science.earth.geology",
+                "concept_explanation": "Sedimentary, igneous and metamorphic rocks contain minerals and are formed by processes operating at different timescales.",
+                "key_points": ["Igneous: from cooled magma/lava", "Sedimentary: from compressed layers of sediment", "Metamorphic: changed by heat and pressure", "Rock cycle: continuous transformation between types"],
+                "examples": [
+                  { "question": "How does sedimentary rock form?", "solution_steps": ["Weathering breaks down existing rocks into sediments", "Erosion transports sediments to rivers, lakes, seas", "Layers of sediment build up over time", "Compaction and cementation turn sediment into rock"], "answer": "Weathering → erosion → deposition → compaction and cementation over millions of years.", "difficulty": 1 }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Physical Sciences",
+            "topics": [
+              {
+                "id": "SCI-PHY-01", "title": "Forces and Motion", "topic_id": "science.physics.forces",
+                "concept_explanation": "Change to an object's motion is caused by unbalanced forces acting on it. Earth's gravity pulls objects towards the centre of the Earth.",
+                "key_points": ["Balanced forces: no change in motion", "Unbalanced forces: acceleration", "Friction opposes motion", "Gravity: 9.8 m/s² towards Earth's centre"],
+                "examples": [
+                  { "question": "A book sits on a table. What forces act on it and are they balanced?", "solution_steps": ["Weight (gravity): pulls book downward", "Normal force: table pushes book upward", "These forces are equal and opposite", "Net force = 0 → balanced → book stays still"], "answer": "Weight (down) and normal force (up) are balanced — the book remains stationary.", "difficulty": 1 }
+                ]
+              },
+              {
+                "id": "SCI-PHY-02", "title": "Energy Transfers and Transformations", "topic_id": "science.physics.energy",
+                "concept_explanation": "Energy can be transferred and transformed. It is conserved in a closed system. Common forms: kinetic, potential, thermal, electrical, light, sound.",
+                "key_points": ["KE = ½mv²", "PE = mgh", "Energy conservation: total energy constant", "Efficiency = useful output / total input × 100%"],
+                "examples": [
+                  { "question": "A ball is thrown upward. Describe the energy transformations.", "solution_steps": ["At launch: maximum kinetic energy, minimum PE", "Rising: KE converts to gravitational PE", "At peak: KE = 0, maximum PE", "Falling: PE converts back to KE", "Energy is conserved throughout (ignoring air resistance)"], "answer": "KE → PE (going up) → KE (coming down). Total energy stays constant — it transforms between kinetic and potential.", "difficulty": 2 }
+                ]
+              },
+              {
+                "id": "SCI-PHY-03", "title": "Light and Sound Waves", "topic_id": "science.physics.waves",
+                "concept_explanation": "Light can form images using the properties of reflection and refraction. Sound is produced by vibrations and travels as longitudinal waves.",
+                "key_points": ["Light: transverse wave, doesn't need medium", "Sound: longitudinal wave, needs medium", "Reflection: angle of incidence = angle of reflection", "Refraction: light bends when changing medium"],
+                "examples": [
+                  { "question": "Why can't sound travel through space but light can?", "solution_steps": ["Sound is a mechanical wave — needs particles to vibrate", "Space is a vacuum — no particles", "Light is an electromagnetic wave — doesn't need a medium", "Light can travel through vacuum"], "answer": "Sound needs a medium (particles) to travel, and space is a vacuum. Light is an electromagnetic wave that can travel through empty space.", "difficulty": 1 }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "practice": [],
+      "mockExams": []
+    }
+  ]
+}

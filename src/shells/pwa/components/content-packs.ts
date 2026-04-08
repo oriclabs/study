@@ -119,8 +119,36 @@ export interface PackMeta {
 
 /* ============ Manager ============ */
 
+/** Default packs to preload on first launch or when pack version changes. */
+const DEFAULT_PACKS = [
+  '/packs/vic-selective-exam.json',
+  '/packs/vic-curriculum.json',
+];
+
 export class ContentPackManager {
   constructor(private storage: StorageAdapter) {}
+
+  /** Preload default packs if not already imported or if version is newer. */
+  async preloadDefaults(): Promise<void> {
+    for (const url of DEFAULT_PACKS) {
+      try {
+        const resp = await fetch(url);
+        if (!resp.ok) continue;
+        const data = await resp.json();
+        const packId = data.packId;
+        const newVersion = data.packVersion;
+
+        // Check if already imported with same or newer version
+        const existing = await this.storage.get<PackMeta>(`pack.meta.${packId}`);
+        if (existing && existing.packVersion >= newVersion) continue;
+
+        await this.importPack(data);
+        console.log(`Preloaded pack: ${packId} v${newVersion}`);
+      } catch (e) {
+        console.warn(`Failed to preload ${url}:`, e);
+      }
+    }
+  }
 
   /** Import a content pack. Overwrites if same packId exists, preserves version log. */
   async importPack(raw: unknown): Promise<PackMeta> {

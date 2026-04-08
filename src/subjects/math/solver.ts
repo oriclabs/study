@@ -418,12 +418,14 @@ export function solve(input: string): Lesson | null {
   let trimmed = input.trim();
   trimmed = trimmed
     // Strip instruction prefixes: "Solve:", "Solve by factoring:", "Find the value of:", etc.
-    .replace(/^(?:solve|find|calculate|evaluate|simplify|expand|factorise|factorize|sketch|graph|plot|draw)\s*(?:by\s+\w+\s*)?[:.]?\s*/i, '')
+    .replace(/^(?:solve|find|calculate|evaluate|simplify|expand|factorise|factorize|sketch|graph|plot|draw|triangle|standard|extension|foundation)\s*(?:by\s+\w+\s*)?[:.]?\s*/i, '')
     .replace(/^(?:the\s+)?(?:value|area|perimeter|volume|angle|length|height|distance|equation)\s+(?:of\s+)?[:.]?\s*/i, '')
-    .replace(/^make\s+(\w)\s+the\s+subject\s+(?:of\s+)?/i, 'REARRANGE:$1:')  // "Make r the subject of A = πr²"
+    .replace(/^make\s+(\w)\s+the\s+subject\s+(?:of\s+)?/i, 'REARRANGE:$1:')
     .replace(/\u2212/g, '-').replace(/\u00D7/g, '*').replace(/\u00F7/g, '/')
     .replace(/\u00B2/g, '^2').replace(/\u00B3/g, '^3')
+    .replace(/\u00B0/g, ' degrees ')  // °
     .replace(/\u02E3/g, '^x') // ˣ
+    .replace(/\u03C0/g, 'pi') // π
     .trim();
   if (!trimmed) return null;
 

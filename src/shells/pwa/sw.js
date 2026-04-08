@@ -10,7 +10,7 @@
 // purged. Network-first HTML means a fresh document is always fetched when
 // online, so hashed asset references never get stale.
 
-const VERSION = 'glean-v3';
+const VERSION = 'study-v4';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
