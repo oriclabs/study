@@ -62,7 +62,7 @@ async function main() {
   document.body.appendChild(mainCanvas);
 
   // Initialize platform + app
-  const platform = createPwaPlatform('/content');
+  const platform = createPwaPlatform(`${import.meta.env.BASE_URL}content`);
   const app = new App({
     platform,
     subjects: [math, verbal, numerical, physics, reading, grammar, writing],
@@ -284,7 +284,7 @@ async function main() {
 
   // Register service worker for offline support
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').catch(() => { /* ignore in dev */ });
+    navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).catch(() => { /* ignore in dev */ });
   }
 }
 
